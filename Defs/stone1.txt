@@ -1,0 +1,34 @@
+<!--                              123456                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocks123456</defName>
+    <label>123456 blocks</label>
+    <description>Blocks of solid 123456.</description>
+    <graphicData>
+      <color>(value,value,value)</color>
+    </graphicData>
+    <statBases>
+        <MarketValue>value</MarketValue> <!-- base 0.9 -->
+        <Mass>value</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  --> 
+        <SharpDamageMultiplier>value</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+        <!-- <BluntDamageMultiplier></BluntDamageMultiplier> --> <!-- base 1.0 -->
+        <!-- <Beauty>value</Beauty> --> <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+        <commonality>value</commonality> <!-- base 0.2 -->
+      <color>(value,value,value)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <!-- <stuffAdjective>123456</stuffAdjective> -->
+      <statFactors>
+          <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+          <Beauty>value</Beauty>  <!-- sandstone 1.1 slate 1.1 marble 1.35 -->
+          <MaxHitPoints>value</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+          <WorkToBuild>value</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+          <WorkToMake>value</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+          <Flammability>value</Flammability> <!-- base 0 -->
+          <MeleeWeapon_CooldownMultiplier>value</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>RimFantasy - Gemstones</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_diamond" or 
+                        defName="carnap_ruby" or 
+                        defName="carnap_carnelian" or 
+                        defName="carnap_citrine" or 
+                        defName="carnap_peridot" or 
+                        defName="carnap_emerald" or 
+                        defName="carnap_aquamarine" or 
+                        defName="carnap_sapphire" or 
+                        defName="carnap_amethyst" or 
+                        defName="carnap_kunzite" or 
+                        defName="carnap_nyx"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Materials - Metals</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_iron" or 
+                        defName="carnap_coal" or 
+                        defName="carnap_charcoal" or 
+                        defName="carnap_copper" or 
+                        defName="carnap_tin" or 
+                        defName="carnap_bronze" or 
+                        defName="carnap_lead" or 
+                        defName="carnap_tungsten" or 
+                        defName="carnap_titanium" or 
+                        defName="carnap_chromium" or 
+                        defName="carnap_germanium" or 
+                        defName="carnap_lithium" or 
+                        defName="carnap_stainless_steel" or 
+                        defName="carnap_cement" or 
+                        defName="carnap_concrete" or 
+                        defName="carnap_fossil"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[LITE]Expanded Materials - Metals</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_iron" 
+                        or defName="carnap_coal" 
+                        or defName="carnap_charcoal" 
+                        or defName="carnap_copper" 
+                        or defName="carnap_tin" 
+                        or defName="carnap_bronze" 
+                        or defName="carnap_lead" 
+                        or defName="carnap_cement" 
+                        or defName="carnap_concrete"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Expanded Materials - Plastics</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_polypropylene" or 
+                        defName="carnap_carbon_fiber" or 
+                        defName="carnap_polyester"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Project RimFactory - Materials</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_iron" 
+                        or defName="carnap_copper" 
+                        or defName="carnap_coal" 
+                        or defName="carnap_carbon" 
+                        or defName="carnap_diamond" 
+                        or defName="carnap_cement" 
+                        or defName="carnap_clay" 
+                        or defName="carnap_concrete" 
+                        or defName="carnap_polypropylene" 
+                        or defName="carnap_glass" 
+                        or defName="carnap_polyester" 
+                        or defName="carnap_kevlar"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Steampunk: Just Brass</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[defName="carnap_brass"]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Wolfhaul Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_naphtha" 
+                        or defName="carnap_lime" 
+                        or defName="carnap_pitch" 
+                        or defName="carnap_copper" 
+                        or defName="carnap_zinc" 
+                        or defName="carnap_brass" 
+                        or defName="carnap_galalith" 
+                        or defName="carnap_acrylic" 
+                        or defName="carnap_PVC" 
+                        or defName="carnap_bischofite" 
+                        or defName="carnap_latex" 
+                        or defName="carnap_casein" 
+                        or defName="carnap_chemrubber" 
+                        or defName="carnap_elastomer"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Wolfhaul Core Metals</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_"
+                        or defName="carnap_tin" 
+                        or defName="carnap_copper" 
+                        or defName="carnap_zinc" 
+                        or defName="carnap_lead" 
+                        or defName="carnap_iron" 
+                        or defName="carnap_tungsten" 
+                        or defName="carnap_titanium" 
+                        or defName="carnap_pewter" 
+                        or defName="carnap_bronze" 
+                        or defName="carnap_brass"
+                        or defName="carnap_pig_iron"
+                        or defName="carnap_cast_iron"
+                        or defName="carnap_wrought_iron"
+                        or defName="carnap_hardened_steel"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>[Aq] Mineralogy (Continued)</li>
+            <li>[Aq] Mineralogy</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_alexandrite" 
+                        or defName="carnap_almandine"
+                        or defName="carnap_amber"
+                        or defName="carnap_amethyst"
+                        or defName="carnap_aquamarine"
+                        or defName="carnap_carnelian"
+                        or defName="carnap_chrysoberyl"
+                        or defName="carnap_citrine"
+                        or defName="carnap_diamond"
+                        or defName="carnap_dioptase"
+                        or defName="carnap_ekanite"
+                        or defName="carnap_emerald"
+                        or defName="carnap_flint"
+                        or defName="carnap_garnet"
+                        or defName="carnap_helliodor"
+                        or defName="carnap_iolite"
+                        or defName="carnap_kunzite"
+                        or defName="carnap_labradorite"
+                        or defName="carnap_lapis"
+                        or defName="carnap_larimar"
+                        or defName="carnap_lazulite"
+                        or defName="carnap_malachite"
+                        or defName="carnap_moonstone"
+                        or defName="carnap_morganite"
+                        or defName="carnap_obsidian"
+                        or defName="carnap_opal"
+                        or defName="carnap_padparadsha"
+                        or defName="carnap_peridot"
+                        or defName="carnap_quartz"
+                        or defName="carnap_rhodonite"
+                        or defName="carnap_ruby"
+                        or defName="carnap_saphire"
+                        or defName="carnap_spinel"
+                        or defName="carnap_sunstone"
+                        or defName="carnap_tanzanite"
+                        or defName="carnap_tigerseye"
+                        or defName="carnap_topaz"
+                        or defName="carnap_turmaline"
+                        or defName="carnap_turquose"
+                        or defName="carnap_lumenite"
+                        or defName="carnap_bornite"
+                        or defName="carnap_chrondrite"
+                        or defName="carnap_moissanite"
+                        or defName="carnap_platinum"
+                        or defName="carnap_copper"
+                        or defName="carnap_fluorite"
+                        or defName="carnap_zoisite"
+                        or defName="carnap_uvarovite"
+                        or defName="carnap_zircon"
+                        or defName="carnap_cuprite"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+
+</Patch>

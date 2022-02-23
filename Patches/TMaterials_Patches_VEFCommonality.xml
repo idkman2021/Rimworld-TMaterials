@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Expanded Framework</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <!--
+                 <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="123456"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor></structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor></weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor></apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                -->
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_cardboard"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0.1</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0.1</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0.1</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_plasticine_green"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0.1</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0.1</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0.1</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_plasticine_red"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_plasticine_blue"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_plasticine_yellow"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>/Defs/ThingDef[defName="carnap_polystyrene_foam"]</xpath>
+                    <value>
+                        <li Class="VFECore.StuffExtension">
+                            <structureGenerationCommonalityFactor>0.1</structureGenerationCommonalityFactor>
+                            <weaponGenerationCommonalityFactor>0.1</weaponGenerationCommonalityFactor>
+                            <apparelGenerationCommonalityFactor>0.1</apparelGenerationCommonalityFactor>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
