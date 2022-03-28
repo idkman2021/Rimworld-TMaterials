@@ -16,6 +16,9 @@ This mod is compatible with those mods and won't add duplicate materials for the
 - Project RimFactory - Materials
 - Steampunk: Just Brass
 - Wolfhaul Core
+- [K]Extra Stone
+- Cupro's Stones
+- [Aq] Mineralogy
 
 ### Content
 - ~50 gemstones
