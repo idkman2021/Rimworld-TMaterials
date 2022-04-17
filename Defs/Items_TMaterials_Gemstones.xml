@@ -123,7 +123,7 @@
         </graphicData>
         <statBases>
             <MarketValue>50</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>1.66</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.92</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -169,7 +169,7 @@
         </graphicData>
         <statBases>
             <MarketValue>2.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.1</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -204,7 +204,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.7</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.1</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -238,7 +238,7 @@
         </graphicData>
         <statBases>
             <MarketValue>14.1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -271,7 +271,7 @@
         </graphicData>
         <statBases>
             <MarketValue>47.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -302,7 +302,7 @@
         </graphicData>
         <statBases>
             <MarketValue>33.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -419,8 +419,8 @@
             <color>(108,106,105)</color> <!-- R,G,B -->
         </stuffProps>
     </ThingDef>
-    
-    
+
+
     <!--============================ uvarovite ===============================-->
     <ThingDef ParentName="carnap_GemBase">
         <defName>carnap_uvarovite</defName>
@@ -431,7 +431,7 @@
         </graphicData>
         <statBases>
             <MarketValue>61.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -464,7 +464,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -497,7 +497,7 @@
         </graphicData>
         <statBases>
             <MarketValue>27.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.1</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -530,7 +530,7 @@
         </graphicData>
         <statBases>
             <MarketValue>15.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -563,7 +563,7 @@
         </graphicData>
         <statBases>
             <MarketValue>0.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -596,7 +596,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.76</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -629,7 +629,7 @@
         </graphicData>
         <statBases>
             <MarketValue>2.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.15</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.015</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -662,7 +662,7 @@
         </graphicData>
         <statBases>
             <MarketValue>0.7</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.15</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.015</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -696,7 +696,7 @@
         </graphicData>
         <statBases>
             <MarketValue>2.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -729,7 +729,7 @@
         </graphicData>
         <statBases>
             <MarketValue>3.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.52</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.16</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -763,7 +763,7 @@
         </graphicData>
         <statBases>
             <MarketValue>0.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -798,7 +798,7 @@
         </graphicData>
         <statBases>
             <MarketValue>86.6</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.76</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -832,7 +832,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.25</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -865,7 +865,7 @@
         </graphicData>
         <statBases>
             <MarketValue>13</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -898,7 +898,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -931,7 +931,7 @@
         </graphicData>
         <statBases>
             <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -964,7 +964,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -997,7 +997,7 @@
         </graphicData>
         <statBases>
             <MarketValue>7.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1031,7 +1031,7 @@
         </graphicData>
         <statBases>
             <MarketValue>4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1065,7 +1065,7 @@
         </graphicData>
         <statBases>
             <MarketValue>26.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1099,7 +1099,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.7</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1132,7 +1132,7 @@
         </graphicData>
         <statBases>
             <MarketValue>8.3</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1160,7 +1160,7 @@
     <ThingDef Name="carnap_TourmalineBase" ParentName="carnap_GemLongBase" Abstract="True">
         <statBases>
             <MarketValue>11.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1327,7 +1327,7 @@
         </graphicData>
         <statBases>
             <MarketValue>3.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1360,7 +1360,7 @@
         </graphicData>
         <statBases>
             <MarketValue>1.3</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1391,7 +1391,7 @@
         </graphicData>
         <statBases>
             <MarketValue>7.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1583,8 +1583,8 @@
     </ThingDef>
 
 
-     <!--============================ ammolite     ===============================-->
-     <ThingDef ParentName="carnap_GemBase">
+    <!--============================ ammolite     ===============================-->
+    <ThingDef ParentName="carnap_GemBase">
         <defName>carnap_ammolite</defName>
         <label>ammolite</label>
         <description>An opal-like organic gemstone made of the fossilized shells of ammonites.</description>
@@ -1593,7 +1593,7 @@
         </graphicData>
         <statBases>
             <MarketValue>2.0</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-            <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
             <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
             <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
             <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
@@ -1617,7 +1617,7 @@
     </ThingDef>
 
 
-<!-- 
+    <!-- 
 andalusite
 apatite
 beryl
@@ -1658,104 +1658,136 @@ zoisite
 -->
 
 
-<!--============================ andalusite     ===============================-->
-<ThingDef ParentName="carnap_GemRoundBase">
-    <defName>carnap_andalusite</defName>
-    <label>andalusite</label>
-    <description>A gold colored highly pleochoric gem.</description>
-    <graphicData>
-        <color>(211,182,114)</color>
-    </graphicData>
-    <statBases>
-        <MarketValue>1.6</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-        <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
-        <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
-        <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
-        <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
-        <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
-        <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
-        <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
-        <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
-    </statBases>
-    <stuffProps>
-        <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-        <color>(211,182,114)</color> <!-- R,G,B -->
-        <statOffsets>
-            <Beauty>5</Beauty> <!-- silver 6 gold 20 jade 10 -->
-        </statOffsets>
-        <statFactors>
-            <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
-            <Beauty>2.1</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
-        </statFactors>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
-</ThingDef>
+    <!--============================ andalusite     ===============================-->
+    <ThingDef ParentName="carnap_GemRoundBase">
+        <defName>carnap_andalusite</defName>
+        <label>andalusite</label>
+        <description>A gold colored highly pleochoric gem.</description>
+        <graphicData>
+            <color>(211,182,114)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.6</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(211,182,114)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>5</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.1</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
 
-<!--============================ apatite     ===============================-->
-<ThingDef ParentName="carnap_GemRoundBase">
-    <defName>carnap_apatite</defName>
-    <label>apatite</label>
-    <description>A gem known for its asparagus green color.</description>
-    <graphicData>
-        <color>(7,201,207)</color>
-    </graphicData>
-    <statBases>
-        <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-        <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
-        <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
-        <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
-        <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
-        <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
-        <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
-        <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
-        <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
-    </statBases>
-    <stuffProps>
-        <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-        <color>(7,201,207)</color> <!-- R,G,B -->
-        <statOffsets>
-            <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
-        </statOffsets>
-        <statFactors>
-            <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
-            <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
-        </statFactors>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
-</ThingDef>
+    <!--============================ apatite     ===============================-->
+    <ThingDef ParentName="carnap_GemRoundBase">
+        <defName>carnap_apatite</defName>
+        <label>apatite</label>
+        <description>A gem known for its asparagus green color.</description>
+        <graphicData>
+            <color>(7,201,207)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(7,201,207)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
 
-<!--============================ red coral     ===============================-->
-<ThingDef ParentName="carnap_GemBase">
-    <defName>carnap_red_coral</defName>
-    <label>red coral</label>
-    <description>An intensely colored red skeleton of marine red corals, used for making jewelry.</description>
-    <graphicData>
-        <texPath>TMaterials/unique/redcoral</texPath>
-    </graphicData>
-    <statBases>
-        <MarketValue>5.0</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
-        <Mass>0.2</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
-        <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
-        <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
-        <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
-        <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
-        <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
-        <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
-        <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
-    </statBases>
-    <stuffProps>
-        <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-        <color>(255,64,64)</color> <!-- R,G,B -->
-        <statOffsets>
-            <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
-        </statOffsets>
-        <statFactors>
-            <MaxHitPoints>0.2</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
-            <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
-        </statFactors>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
-</ThingDef>
+    <!--============================ red coral     ===============================-->
+    <ThingDef ParentName="carnap_GemBase">
+        <defName>carnap_red_coral</defName>
+        <label>red coral</label>
+        <description>An intensely colored red skeleton of marine red corals, used for making jewelry.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/redcoral</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.0</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(255,64,64)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.2</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="carnap_GemSmoothMatteBase">
+        <defName>carnap_carnelian</defName>
+        <label>carnelian</label>
+        <description>A cheap brownish-red mineral that is commonly used as a semi-precious gemstone.</description>
+        <graphicData>
+            <color>(215,96,53)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(215,96,53)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>1</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
 
 
 </Defs>

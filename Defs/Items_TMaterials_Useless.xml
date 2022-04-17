@@ -69,6 +69,8 @@
       <texPath>TMaterials/unique/paper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
+    <generateCommonality>0.01</generateCommonality>
+    <generateAllowChance>0.01</generateAllowChance>
     <statBases>
         <MarketValue>0.04</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
         <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
@@ -78,8 +80,8 @@
         <StuffPower_Armor_Sharp>0.1</StuffPower_Armor_Sharp>      <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
         <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt>         <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
         <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>           <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
-        <StuffPower_Insulation_Cold>0.1</StuffPower_Insulation_Cold>    <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
-        <StuffPower_Insulation_Heat>0.1</StuffPower_Insulation_Heat>    <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+        <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>    <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+        <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>    <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
     </statBases>
     <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -90,7 +92,7 @@
       <categories>
           <li>Fabric</li> <!-- Metallic Woody Stony Fabric -->
       </categories>
-      <commonality>0.05</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <commonality>0.005</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
       <color>(251,251,248)</color> <!-- R,G,B -->
       <allowColorGenerators>true</allowColorGenerators>
  <statOffsets><!---->
