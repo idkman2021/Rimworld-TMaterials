@@ -5,6 +5,12 @@
         <mods>
             <li>RimFantasy - Gemstones</li>
         </mods>
+        <!--
+        <match Class="PatchOperationFindMod">
+            <mods>
+                <li>tests patches</li>
+            </mods>
+            <no-->
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationRemove">
@@ -24,6 +30,7 @@
                         ]</xpath>
                 </li>
             </operations>
+            <!--</nomatch>-->
         </match>
     </Operation>
 
@@ -113,7 +120,6 @@
                         or defName="carnap_copper"
                         or defName="carnap_coal"
                         or defName="carnap_carbon"
-                        or defName="carnap_diamond"
                         or defName="carnap_cement"
                         or defName="carnap_clay"
                         or defName="carnap_concrete"
@@ -298,7 +304,6 @@
                         defName="carnap_polyester"
 
                         or defName="carnap_carbon"
-                        or defName="carnap_diamond"
                         or defName="carnap_cement"
                         or defName="carnap_clay"
                         or defName="carnap_concrete"
@@ -306,6 +311,8 @@
                         or defName="carnap_kevlar"
 
                         or defName="carnap_quartz"
+
+                        or defName="carnap_cobalt"
                         ]</xpath>
                 </li>
             </operations>
@@ -340,6 +347,22 @@
                     <success>Always</success>
                     <xpath>/Defs/ThingDef[
                         defName="carnap_blocksdiorite"
+                        ]</xpath>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Classical</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationRemove">
+                    <success>Always</success>
+                    <xpath>/Defs/ThingDef[
+                        defName="carnap_bronze"
                         ]</xpath>
                 </li>
             </operations>
