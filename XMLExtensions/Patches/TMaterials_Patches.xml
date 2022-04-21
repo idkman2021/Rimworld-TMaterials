@@ -24,7 +24,7 @@
 
             <Operation Class="PatchOperationInsert">
                 <success>Always</success>
-                <xpath>Defs/ThingDef[defName="123456"]</xpath>
+                <xpath>Defs/ThingDef[defName="carnap_blocks123456"]</xpath>
                 <value>
                     <ThingDef ParentName="UglyRockBase" Name="carnap_123456Base">
                         <defName>carnap_123456</defName>
@@ -85,76 +85,11 @@
             
         -->
 
-            <!-- obsidian -->
-            <Operation Class="PatchOperationInsert">
-                <success>Always</success>
-                <xpath>Defs/ThingDef[defName="obsidian"]</xpath>
-                <value>
-
-
-                    <ThingDef ParentName="UglyRockBase" Name="carnap_obsidianBase">
-                        <defName>carnap_obsidian</defName>
-                        <label>obsidian</label>
-                        <description>A brittle volcanic rock formed by rapid cooling of lava.</description>
-                        <graphicData>
-                            <color>(61,53,75)</color>
-                        </graphicData>
-                        <statBases>
-                            <MaxHitPoints>500</MaxHitPoints>
-                            <Beauty>-1</Beauty>
-                        </statBases>
-                        <building>
-                            <mineableThing>carnap_chunkobsidian</mineableThing>
-                            <mineableDropChance>0.25</mineableDropChance>
-                            <smoothedThing>carnap_smoothedobsidian</smoothedThing>
-                        </building>
-                    </ThingDef>
-
-                    <ThingDef ParentName="carnap_obsidianBase">
-                        <defName>carnap_smoothedobsidian</defName>
-                        <label>smoothed obsidian</label>
-                        <description>A brittle volcanic rock formed by rapid cooling of lava. It has been polished to a flat, smooth surface.</description>
-                        <graphicData>
-                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
-                        </graphicData>
-                        <statBases>
-                            <Beauty>2</Beauty>
-                            <MarketValue>90</MarketValue>
-                        </statBases>
-                        <building>
-                            <isNaturalRock>false</isNaturalRock>
-                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
-                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
-                            <smoothedThing />
-                        </building>
-                        <saveCompressible>false</saveCompressible>
-                        <repairEffect>Repair</repairEffect>
-                    </ThingDef>
-
-                    <ThingDef ParentName="ChunkRockBase">
-                        <defName>carnap_chunkobsidian</defName>
-                        <label>obsidian chunk</label>
-                        <graphicData>
-                            <color>(61,53,75)</color>
-                        </graphicData>
-                        <statBases>
-                            <Mass>25</Mass>
-                        </statBases>
-                        <soundDrop>ChunkRock_Drop</soundDrop>
-                        <butcherProducts>
-                            <carnap_blocksobsidian>20</carnap_blocksobsidian>
-                        </butcherProducts>
-                    </ThingDef>
-
-
-                </value>
-            </Operation>
-
 
             <!-- andesite -->
             <Operation Class="PatchOperationInsert">
                 <success>Always</success>
-                <xpath>Defs/ThingDef[defName="andesite"]</xpath>
+                <xpath>Defs/ThingDef[defName="carnap_blocksandesite"]</xpath>
                 <value>
                     <ThingDef ParentName="UglyRockBase" Name="carnap_andesiteBase">
                         <defName>carnap_andesite</defName>
@@ -215,7 +150,7 @@
             <!-- diortie -->
             <Operation Class="PatchOperationInsert">
                 <success>Always</success>
-                <xpath>Defs/ThingDef[defName="diorite"]</xpath>
+                <xpath>Defs/ThingDef[defName="carnap_blocksdiorite"]</xpath>
                 <value>
 
                     <ThingDef ParentName="UglyRockBase" Name="carnap_dioriteBase">
@@ -245,7 +180,7 @@
                         </graphicData>
                         <statBases>
                             <Beauty>1</Beauty>
-                            <MarketValue>19</MarketValue>
+                            <MarketValue>20</MarketValue>
                         </statBases>
                         <building>
                             <isNaturalRock>false</isNaturalRock>
@@ -280,7 +215,7 @@
             <!-- basalt -->
             <Operation Class="PatchOperationInsert">
                 <success>Always</success>
-                <xpath>Defs/ThingDef[defName="basalt"]</xpath>
+                <xpath>Defs/ThingDef[defName="carnap_blocksbasalt"]</xpath>
                 <value>
                     <ThingDef ParentName="UglyRockBase" Name="carnap_basaltBase">
                         <defName>carnap_basalt</defName>
@@ -309,7 +244,7 @@
                         </graphicData>
                         <statBases>
                             <Beauty>1</Beauty>
-                            <MarketValue>19</MarketValue>
+                            <MarketValue>21</MarketValue>
                         </statBases>
                         <building>
                             <isNaturalRock>false</isNaturalRock>
@@ -341,7 +276,7 @@
             <!-- tuff -->
             <Operation Class="PatchOperationInsert">
                 <success>Always</success>
-                <xpath>Defs/ThingDef[defName="tuff"]</xpath>
+                <xpath>Defs/ThingDef[defName="carnap_blockstuff"]</xpath>
                 <value>
                     <ThingDef ParentName="UglyRockBase" Name="carnap_tuffBase">
                         <defName>carnap_tuff</defName>
@@ -399,10 +334,1291 @@
                 </value>
             </Operation>
 
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksquartzite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_quartziteBase">
+                        <defName>carnap_quartzite</defName>
+                        <label>quartzite</label>
+                        <description>A rock converted from sandstone due to heating and pressure from tectonic compression.</description>
+                        <graphicData>
+                            <color>(202,200,203)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>550</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkquartzite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedquartzite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_quartziteBase">
+                        <defName>carnap_smoothedquartzite</defName>
+                        <label>smoothed quartzite</label>
+                        <description>An rock converted from sandstone due to heating and pressure from tectonic compression. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>21</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkquartzite</defName>
+                        <label>quartzite chunk</label>
+                        <graphicData>
+                            <color>(202,200,203)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksquartzite>20</carnap_blocksquartzite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blockssoapstone"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_soapstoneBase">
+                        <defName>carnap_soapstone</defName>
+                        <label>soapstone</label>
+                        <description>A very soft rock converted from various minerals through a combination of heating, pressure and time.</description>
+                        <graphicData>
+                            <color>(57,64,66)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>250</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunksoapstone</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedsoapstone</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_soapstoneBase">
+                        <defName>carnap_smoothedsoapstone</defName>
+                        <label>smoothed soapstone</label>
+                        <description>A rock converted from sandstone due to heating and pressure from tectonic compression. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>13</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunksoapstone</defName>
+                        <label>soapstone chunk</label>
+                        <graphicData>
+                            <color>(57,64,66)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blockssoapstone>20</carnap_blockssoapstone>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksgneiss"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_gneissBase">
+                        <defName>carnap_gneiss</defName>
+                        <label>gneiss</label>
+                        <description>A common and widely distributed type of metamorphic rock.</description>
+                        <graphicData>
+                            <color>(150, 142, 120)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>700</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkgneiss</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedgneiss</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_gneissBase">
+                        <defName>carnap_smoothedgneiss</defName>
+                        <label>smoothed gneiss</label>
+                        <description>A common and widely distributed type of metamorphic rock. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkgneiss</defName>
+                        <label>gneiss chunk</label>
+                        <graphicData>
+                            <color>(150, 142, 120)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksgneiss>20</carnap_blocksgneiss>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksschist"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_schistBase">
+                        <defName>carnap_schist</defName>
+                        <label>schist</label>
+                        <description>A rock which consists of layers of different minerals.</description>
+                        <graphicData>
+                            <color>(169, 178, 147)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>600</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkschist</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedschist</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_schistBase">
+                        <defName>carnap_smoothedschist</defName>
+                        <label>smoothed schist</label>
+                        <description>A rock which consists of layers of different minerals. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkschist</defName>
+                        <label>schist chunk</label>
+                        <graphicData>
+                            <color>(169, 178, 147)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksschist>20</carnap_blocksschist>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blockschalk"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_chalkBase">
+                        <defName>carnap_chalk</defName>
+                        <label>chalk</label>
+                        <description>A very soft rock formed from the skeletal remains of sea creatures.</description>
+                        <graphicData>
+                            <color>(235,238,236)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>200</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkchalk</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedchalk</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_chalkBase">
+                        <defName>carnap_smoothedchalk</defName>
+                        <label>smoothed chalk</label>
+                        <description>A rock formed from the skeletal remains of sea creatures. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>10</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkchalk</defName>
+                        <label>chalk chunk</label>
+                        <graphicData>
+                            <color>(235,238,236)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blockschalk>20</carnap_blockschalk>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blockssiltstone"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_siltstoneBase">
+                        <defName>carnap_siltstone</defName>
+                        <label>siltstone</label>
+                        <description>A rock composed mostly of silt.</description>
+                        <graphicData>
+                            <color>(201, 172, 155)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>400</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunksiltstone</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedsiltstone</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_siltstoneBase">
+                        <defName>carnap_smoothedsiltstone</defName>
+                        <label>smoothed siltstone</label>
+                        <description>A rock composed mostly of silt. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunksiltstone</defName>
+                        <label>siltstone chunk</label>
+                        <graphicData>
+                            <color>(201, 172, 155)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blockssiltstone>20</carnap_blockssiltstone>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksshale"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_shaleBase">
+                        <defName>carnap_shale</defName>
+                        <label>shale</label>
+                        <description>A rock formed by the compaction of silt and clay-size mineral particles.</description>
+                        <graphicData>
+                            <color>(74,63,65)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>400</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkshale</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedshale</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_shaleBase">
+                        <defName>carnap_smoothedshale</defName>
+                        <label>smoothed shale</label>
+                        <description>A rock formed by the compaction of silt and clay-size mineral particles. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkshale</defName>
+                        <label>shale chunk</label>
+                        <graphicData>
+                            <color>(74,63,65)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksshale>20</carnap_blocksshale>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksmudstone"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_mudstoneBase">
+                        <defName>carnap_mudstone</defName>
+                        <label>mudstone</label>
+                        <description>An ugly rock formed from consolidated mud.</description>
+                        <graphicData>
+                            <color>(206,196,147)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>400</MaxHitPoints>
+                            <Beauty>-2</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkmudstone</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedmudstone</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_mudstoneBase">
+                        <defName>carnap_smoothedmudstone</defName>
+                        <label>smoothed mudstone</label>
+                        <description>A rock formed from consolidated mud. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>0</Beauty>
+                            <MarketValue>15</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkmudstone</defName>
+                        <label>mudstone chunk</label>
+                        <graphicData>
+                            <color>(206,196,147)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksmudstone>20</carnap_blocksmudstone>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksclaystone"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_claystoneBase">
+                        <defName>carnap_claystone</defName>
+                        <label>claystone</label>
+                        <description>A rock composed primarily of clay-sized particles.</description>
+                        <graphicData>
+                            <color>(183,175,165)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>350</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkclaystone</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedclaystone</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_claystoneBase">
+                        <defName>carnap_smoothedclaystone</defName>
+                        <label>smoothed claystone</label>
+                        <description>A rock formed from consolidated mud. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkclaystone</defName>
+                        <label>claystone chunk</label>
+                        <graphicData>
+                            <color>(183,175,165)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksclaystone>20</carnap_blocksclaystone>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blockspumice"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_pumiceBase">
+                        <defName>carnap_pumice</defName>
+                        <label>pumice</label>
+                        <description>A rock produced when lava with a very high content of water and gases is discharged from a volcano.</description>
+                        <graphicData>
+                            <color>(202,198,191)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>320</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkpumice</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedpumice</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_pumiceBase">
+                        <defName>carnap_smoothedpumice</defName>
+                        <label>smoothed pumice</label>
+                        <description>A rock formed from consolidated mud. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkpumice</defName>
+                        <label>pumice chunk</label>
+                        <graphicData>
+                            <color>(202,198,191)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>2.5</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blockspumice>20</carnap_blockspumice>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksconglomerate"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_conglomerateBase">
+                        <defName>carnap_conglomerate</defName>
+                        <label>conglomerate</label>
+                        <description>A rock composed of rounded fragments embedded in a matrix of cementing material such as sand, silt, and clay.</description>
+                        <graphicData>
+                            <color>(186, 176, 147)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>350</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkconglomerate</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedconglomerate</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_conglomerateBase">
+                        <defName>carnap_smoothedconglomerate</defName>
+                        <label>smoothed conglomerate</label>
+                        <description>A rock composed of rounded fragments embedded in a matrix of cementing material such as sand, silt, and clay. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkconglomerate</defName>
+                        <label>conglomerate chunk</label>
+                        <graphicData>
+                            <color>(186, 176, 147)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksconglomerate>20</carnap_blocksconglomerate>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksamphibolite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_amphiboliteBase">
+                        <defName>carnap_amphibolite</defName>
+                        <label>amphibolite</label>
+                        <description>A rock consisting mainly of hornblende and plagioclase.</description>
+                        <graphicData>
+                            <color>(70,72,71)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>1000</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkamphibolite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedamphibolite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_amphiboliteBase">
+                        <defName>carnap_smoothedamphibolite</defName>
+                        <label>smoothed amphibolite</label>
+                        <description>A rock consisting mainly of hornblende and plagioclase. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkamphibolite</defName>
+                        <label>amphibolite chunk</label>
+                        <graphicData>
+                            <color>(70,72,71)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksamphibolite>20</carnap_blocksamphibolite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksanorthosite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_anorthositeBase">
+                        <defName>carnap_anorthosite</defName>
+                        <label>anorthosite</label>
+                        <description>A rock composed largely of labradorite.</description>
+                        <graphicData>
+                            <color>(87,98,91)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>750</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkanorthosite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedanorthosite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_anorthositeBase">
+                        <defName>carnap_smoothedanorthosite</defName>
+                        <label>smoothed anorthosite</label>
+                        <description>A rock composed largely of labradorite. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkanorthosite</defName>
+                        <label>anorthosite chunk</label>
+                        <graphicData>
+                            <color>(87,98,91)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksanorthosite>20</carnap_blocksanorthosite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksbreccia"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_brecciaBase">
+                        <defName>carnap_breccia</defName>
+                        <label>breccia</label>
+                        <description>A rock consisting of angular fragments of stones cemented by finer calcareous material.</description>
+                        <graphicData>
+                            <color>(188,110,84)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>700</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkbreccia</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedbreccia</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_brecciaBase">
+                        <defName>carnap_smoothedbreccia</defName>
+                        <label>smoothed breccia</label>
+                        <description>A rock consisting of angular fragments of stones cemented by finer calcareous material. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkbreccia</defName>
+                        <label>breccia chunk</label>
+                        <graphicData>
+                            <color>(188,110,84)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksbreccia>20</carnap_blocksbreccia>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksdolostone"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_dolostoneBase">
+                        <defName>carnap_dolostone</defName>
+                        <label>dolostone</label>
+                        <description>A rock formed chiefly of dolomite.</description>
+                        <graphicData>
+                            <color>(198,198,200)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>650</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkdolostone</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smootheddolostone</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_dolostoneBase">
+                        <defName>carnap_smootheddolostone</defName>
+                        <label>smoothed dolostone</label>
+                        <description>A rock formed chiefly of dolomite. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkdolostone</defName>
+                        <label>dolostone chunk</label>
+                        <graphicData>
+                            <color>(198,198,200)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksdolostone>20</carnap_blocksdolostone>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksdunite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_duniteBase">
+                        <defName>carnap_dunite</defName>
+                        <label>dunite</label>
+                        <description>A rock consisting largely of olivine.</description>
+                        <graphicData>
+                            <color>(139,140,100)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>550</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkdunite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smootheddunite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_duniteBase">
+                        <defName>carnap_smootheddunite</defName>
+                        <label>smoothed dunite</label>
+                        <description>A rock consisting largely of olivine. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkdunite</defName>
+                        <label>dunite chunk</label>
+                        <graphicData>
+                            <color>(139,140,100)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksdunite>20</carnap_blocksdunite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksporphyry"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_porphyryBase">
+                        <defName>carnap_porphyry</defName>
+                        <label>porphyry</label>
+                        <description>A rock containing crystals of feldspar in a fine-grained groundmass.</description>
+                        <graphicData>
+                            <color>(152,60,71)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>600</MaxHitPoints>
+                            <Beauty>0</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkporphyry</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedporphyry</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_porphyryBase">
+                        <defName>carnap_smoothedporphyry</defName>
+                        <label>smoothed porphyry</label>
+                        <description>A rock containing crystals of feldspar in a fine-grained groundmass. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>2</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkporphyry</defName>
+                        <label>porphyry chunk</label>
+                        <graphicData>
+                            <color>(152,60,71)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksporphyry>20</carnap_blocksporphyry>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksrhyolite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_rhyoliteBase">
+                        <defName>carnap_rhyolite</defName>
+                        <label>rhyolite</label>
+                        <description>A rock rhyolite formed when lava cools down on or near the earth's surface.</description>
+                        <graphicData>
+                            <color>(187,146,120)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>900</MaxHitPoints>
+                            <Beauty>0</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkrhyolite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedrhyolite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_rhyoliteBase">
+                        <defName>carnap_smoothedrhyolite</defName>
+                        <label>smoothed rhyolite</label>
+                        <description>A rock rhyolite formed when lava cools down on or near the earth's surface. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkrhyolite</defName>
+                        <label>rhyolite chunk</label>
+                        <graphicData>
+                            <color>(187,146,120)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksrhyolite>20</carnap_blocksrhyolite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blockssyenite"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_syeniteBase">
+                        <defName>carnap_syenite</defName>
+                        <label>syenite</label>
+                        <description>A rock syenite composed mainly of alkali feldspar and ferromagnesian minerals.</description>
+                        <graphicData>
+                            <color>(213,203,194)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>850</MaxHitPoints>
+                            <Beauty>0</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunksyenite</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedsyenite</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_syeniteBase">
+                        <defName>carnap_smoothedsyenite</defName>
+                        <label>smoothed syenite</label>
+                        <description>A rock syenite composed mainly of alkali feldspar and ferromagnesian minerals. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>1</Beauty>
+                            <MarketValue>20</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunksyenite</defName>
+                        <label>syenite chunk</label>
+                        <graphicData>
+                            <color>(213,203,194)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blockssyenite>20</carnap_blockssyenite>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
 
         </caseTrue>
         <caseFalse></caseFalse>
     </Operation>
 
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials</modId>
+        <key>TMaterials_StoneTypesExotic</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
 
+
+            <!-- obsidian -->
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksobsidian"]</xpath>
+                <value>
+
+
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_obsidianBase">
+                        <defName>carnap_obsidian</defName>
+                        <label>obsidian</label>
+                        <description>A brittle volcanic rock formed by rapid cooling of lava.</description>
+                        <graphicData>
+                            <color>(39,0,37)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>800</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkobsidian</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smoothedobsidian</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_obsidianBase">
+                        <defName>carnap_smoothedobsidian</defName>
+                        <label>smoothed obsidian</label>
+                        <description>A brittle volcanic rock formed by rapid cooling of lava. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>2</Beauty>
+                            <MarketValue>90</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkobsidian</defName>
+                        <label>obsidian chunk</label>
+                        <graphicData>
+                            <color>(39,0,37)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksobsidian>20</carnap_blocksobsidian>
+                        </butcherProducts>
+                    </ThingDef>
+
+
+                </value>
+            </Operation>
+
+            <!-- desert glass -->
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="carnap_blocksdesertglass"]</xpath>
+                <value>
+                    <ThingDef ParentName="UglyRockBase" Name="carnap_desertglassBase">
+                        <defName>carnap_desertglass</defName>
+                        <label>desert glass</label>
+                        <description>Solid desert glass formed by radiative melting of sandstone from large aerial bursts.</description>
+                        <graphicData>
+                            <color>RGBA(220,208,163,135)</color>
+                        </graphicData>
+                        <statBases>
+                            <MaxHitPoints>700</MaxHitPoints>
+                            <Beauty>-1</Beauty>
+                        </statBases>
+                        <building>
+                            <mineableThing>carnap_chunkdesertglass</mineableThing>
+                            <mineableDropChance>0.25</mineableDropChance>
+                            <smoothedThing>carnap_smootheddesertglass</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                    <ThingDef ParentName="carnap_desertglassBase">
+                        <defName>carnap_smootheddesertglass</defName>
+                        <label>smoothed desertglass</label>
+                        <description>Solid desert glass formed by radiative melting of sandstone from large aerial bursts. It has been polished to a flat, smooth surface.</description>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>3</Beauty>
+                            <MarketValue>42</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+
+                    <ThingDef ParentName="ChunkRockBase">
+                        <defName>carnap_chunkdesertglass</defName>
+                        <label>desertglass chunk</label>
+                        <graphicData>
+                            <color>RGBA(220,208,163,150)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>25</Mass>
+                        </statBases>
+                        <soundDrop>ChunkRock_Drop</soundDrop>
+                        <butcherProducts>
+                            <carnap_blocksdesertglass>20</carnap_blocksdesertglass>
+                        </butcherProducts>
+                    </ThingDef>
+                </value>
+            </Operation>
+
+        </caseTrue>
+        <caseFalse></caseFalse>
+    </Operation>
 </Patch>

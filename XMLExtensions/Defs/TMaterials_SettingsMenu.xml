@@ -24,8 +24,17 @@
                 <key>TMaterials_StoneTypes</key>
                 <label>Enable custom rock types</label>
                 <defaultValue>true</defaultValue>
-                <tooltip>Allows stone from this mod to generate as a rock type.</tooltip>
+                <tooltip>Allows stone from this mod to generate as rock types.</tooltip>
             </li>
+
+                        
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterials_StoneTypesExotic</key>
+                <label>Enable custom exotic rock types</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>Allows exotic stones from this mod to generate as rock types.</tooltip>
+            </li>
+
 
 
         </settings>
