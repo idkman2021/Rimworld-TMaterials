@@ -55,7 +55,7 @@
     <label>obsidian blocks</label>
     <description>Blocks of solid obsidian formed by rapid cooling of lava. While too brittle for building, it has been used for tools from prehistoric times to the present day because it can be shaped to an extremely sharp edge.</description>
     <graphicData>
-      <color>(61,53,75)</color>
+      <color>(39,0,37)</color>
     </graphicData>
     <statBases>
       <MarketValue>9</MarketValue> <!-- base 0.9 -->
@@ -67,7 +67,7 @@
     </statBases>
     <stuffProps>
       <commonality>0.05</commonality> <!-- base 0.2 -->
-      <color>(61,53,75)</color>
+      <color>(39,0,37)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
@@ -222,7 +222,7 @@
       <statFactors>
         <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
         <Beauty>0.9</Beauty> <!-- sandstone 1.1 slate 1.1 marble 1.35 -->
-        <MaxHitPoints>1.1</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <MaxHitPoints>1.2</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
         <WorkToBuild>3.5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
         <WorkToMake>0.95</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
         <Flammability>0</Flammability> <!-- base 0 -->
@@ -232,40 +232,736 @@
     </stuffProps>
   </ThingDef>
 
-  
+
   <!--                              desert glass                          -->
-  <!--
+
   <ThingDef ParentName="StoneBlocksBase">
     <defName>carnap_blocksdesertglass</defName>
     <label>desert glass blocks</label>
-    <description>Blocks of solid desert glass formed by radiative melting of sand from large aerial bursts.</description>
+    <description>Blocks of solid desert glass formed by radiative melting of sandstone from large aerial bursts. Desert glass is very hard.</description>
     <graphicData>
-      <color>(194,174,147)</color>
+      <color>RGBA(220,208,163,150)</color>
     </graphicData>
     <statBases>
-      <MarketValue>0.9</MarketValue>
+      <MarketValue>2.4</MarketValue>
       <Mass>0.5</Mass>
-      <SharpDamageMultiplier>1</SharpDamageMultiplier> 
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
     </statBases>
     <stuffProps>
-      <commonality>0.05</commonality>
-      <color>(194,174,147)</color>
+      <commonality>0.01</commonality>
+      <color>RGBA(220,208,163,150)</color>
       <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
-      <stuffAdjective>tuff</stuffAdjective>
+      <stuffAdjective>desert glass</stuffAdjective>
       <statFactors>
         <Beauty>1.2</Beauty>
         <MaxHitPoints>1.8</MaxHitPoints>
         <WorkToBuild>6</WorkToBuild>
-        <WorkToMake>2</WorkToMake> 
+        <WorkToMake>2</WorkToMake>
         <Flammability>0</Flammability>
         <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              quartzite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksquartzite</defName>
+    <label>quartzite blocks</label>
+    <description>Blocks of solid quartzite converted from sandstone due to heating and pressure from tectonic compression. Quartzite is a hard, beautiful stone.</description>
+    <graphicData>
+      <color>(202,200,203)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.1</MarketValue> <!-- base 0.9 -->
+      <Mass>1.1</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(202,200,203)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>quartzite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.5</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.6</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              soapstone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blockssoapstone</defName>
+    <label>soapstone blocks</label>
+    <description>Blocks of solid soapstone. It is a very soft stone and easy to work with, but it isn't durable.</description>
+    <graphicData>
+      <color>(57,64,66)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue> <!-- base 0.9 -->
+      <Mass>0.8</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(57,64,66)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>soapstone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.3</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.1</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>2.5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
       </statFactors>
       <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
     </stuffProps>
   </ThingDef>
--->
+
+  <!--                              gneiss                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksgneiss</defName>
+    <label>gneiss blocks</label>
+    <description>Blocks of solid gneiss, a common and widely distributed type of metamorphic rock.</description>
+    <graphicData>
+      <color>(150, 142, 120)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.2</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(150, 142, 120)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>gneiss</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.6</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              Schist                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksschist</defName>
+    <label>schist blocks</label>
+    <description>Blocks of solid schist, a rock which consists of layers of different minerals.</description>
+    <graphicData>
+      <color>(169, 178, 147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.4</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(169, 178, 147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>schist</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.6</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>5.5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.25</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              chalk                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksschalk</defName>
+    <label>chalk blocks</label>
+    <description>Blocks of solid chalk formed from the skeletal remains of sea creatures. Chalk is a very soft stone.</description>
+    <graphicData>
+      <color>(235,238,236)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.7</MarketValue> <!-- base 0.9 -->
+      <Mass>1</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.3</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(235,238,236)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>chalk</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>1.9</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>0.8</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              siltstone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blockssiltstone</defName>
+    <label>siltstone blocks</label>
+    <description>Blocks of solid silstone composed mostly of silt.</description>
+    <graphicData>
+      <color>(201, 172, 155)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.25</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(201, 172, 155)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>siltstone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.4</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              shale                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksshale</defName>
+    <label>shale blocks</label>
+    <description>Blocks of solid shale formed by the compaction of silt and clay-size mineral particles.</description>
+    <graphicData>
+      <color>(74,63,65)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.15</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(74,63,65)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>shale</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.4</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              Mudstone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksmudstone</defName>
+    <label>mudstone blocks</label>
+    <description>Blocks of solid mudstone formed from consolidated mud. It isn't very pretty.</description>
+    <graphicData>
+      <color>(206,196,147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.15</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(206,196,147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>mudstone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.3</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.4</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+      <statOffsets>
+        <Beauty>-1</Beauty>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              Claystone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksclaystone</defName>
+    <label>claystone blocks</label>
+    <description>Blocks of solid claystone composed primarily of clay-sized particles.</description>
+    <graphicData>
+      <color>(183,175,165)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.15</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(183,175,165)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>claystone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.3</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>4</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              pumice                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blockspumice</defName>
+    <label>pumice blocks</label>
+    <description>Blocks of solid pumice produced when lava with a very high content of water and gases is discharged from a volcano. It is a very light and soft rock.</description>
+    <graphicData>
+      <color>(202,198,191)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>0.15</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(202,198,191)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>pumice</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.25</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>4</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              conglomerate                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksconglomerate</defName>
+    <label>conglomerate blocks</label>
+    <description>Blocks of solid conglomerate composed of rounded fragments embedded in a matrix of cementing material such as sand, silt, and clay.</description>
+    <graphicData>
+      <color>(186, 176, 147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.2</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(186, 176, 147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>conglomerate</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.3</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>4</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              amphibolite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksamphibolite</defName>
+    <label>amphibolite blocks</label>
+    <description>Blocks of solid amphibolite consisting mainly of hornblende and plagioclase.</description>
+    <graphicData>
+      <color>(70,72,71)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.1</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(70,72,71)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>amphibolite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.8</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>7</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              anorthosite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksanorthosite</defName>
+    <label>anorthosite blocks</label>
+    <description>Blocks of solid anorthosite composed largely of labradorite.</description>
+    <graphicData>
+      <color>(87,98,91)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.1</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(87,98,91)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>anorthosite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.6</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              breccia                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksbreccia</defName>
+    <label>breccia blocks</label>
+    <description>Blocks of solid breccia consisting of angular fragments of stones cemented by finer calcareous material.</description>
+    <graphicData>
+      <color>(188,110,84)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.1</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(188,110,84)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>breccia</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.6</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              dolostone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksdolostone</defName>
+    <label>dolostone blocks</label>
+    <description>Blocks of solid dolostone formed chiefly of dolomite.</description>
+    <graphicData>
+      <color>(198,198,200)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.3</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(198,198,200)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>dolostone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.55</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              dunite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksdunite</defName>
+    <label>dunite blocks</label>
+    <description>Blocks of solid dunite consisting largely of olivine.</description>
+    <graphicData>
+      <color>(139,140,100)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.3</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(139,140,100)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>dunite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.45</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <!--                              porphyry                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksporphyry</defName>
+    <label>porphyry blocks</label>
+    <description>Blocks of solid dunite containing crystals of feldspar in a fine-grained groundmass.</description>
+    <graphicData>
+      <color>(152,60,71)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.3</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(152,60,71)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>porphyry</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.5</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              rhyolite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blocksrhyolite</defName>
+    <label>rhyolite blocks</label>
+    <description>Blocks of solid rhyolite formed when lava cools down on or near the earth's surface.</description>
+    <graphicData>
+      <color>(187,146,120)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.25</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(187,146,120)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>rhyolite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.7</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <!--                              syenite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>carnap_blockssyenite</defName>
+    <label>syenite blocks</label>
+    <description>Blocks of solid syenite composed mainly of alkali feldspar and ferromagnesian minerals.</description>
+    <graphicData>
+      <color>(213,203,194)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>1.25</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(213,203,194)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>syenite</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.65</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>6</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
 
 
 </Defs>
