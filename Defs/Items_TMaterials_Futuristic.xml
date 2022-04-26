@@ -39,7 +39,7 @@
       </categories>
       <commonality>0.05</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
       <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
-      <color>(74,255,246)</color> <!-- R,G,B -->
+      <color>RGBA(74,255,246,185)</color> <!-- R,G,B -->
       <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->

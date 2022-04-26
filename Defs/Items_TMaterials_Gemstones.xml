@@ -137,7 +137,7 @@
                 <li>Metallic</li> <!-- custom! -->
             </categories>
             <commonality>0.01</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(185,242,255)</color>
+            <color>RGBA(185,242,255,190)</color>
             <statOffsets>
                 <Beauty>42</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -165,7 +165,7 @@
         <label>amber</label>
         <description>An organic gemstone, forming from the hardened resin of ancient pine trees. Much valued from antiquity to the present, amber is made into a variety of decorative objects.</description>
         <graphicData>
-            <color>(255,201,140)</color>
+            <color>RGBA(255,201,140,210)</color>
         </graphicData>
         <statBases>
             <MarketValue>2.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
@@ -180,7 +180,7 @@
         </statBases>
         <stuffProps>
             <commonality>0.03</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(255,191,0)</color> <!-- R,G,B -->
+            <color>RGBA(255,191,0,210)</color> <!-- R,G,B -->
             <statOffsets>
                 <Beauty>7</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -234,7 +234,7 @@
         <label>ruby</label>
         <description>An expensive blood-red colored gemstone that has accrued special and symbolic meaning through time.</description>
         <graphicData>
-            <color>(244,37,115)</color>
+            <color>RGBA(244,37,115,200)</color>
         </graphicData>
         <statBases>
             <MarketValue>14.1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
@@ -249,7 +249,7 @@
         </statBases>
         <stuffProps>
             <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(224,17,95)</color> <!-- R,G,B -->
+            <color>RGBA(224,17,95,180)</color> <!-- R,G,B -->
             <statOffsets>
                 <Beauty>24</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -282,7 +282,7 @@
         </statBases>
         <stuffProps>
             <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(80,220,100)</color> <!-- R,G,B -->
+            <color>RGBA(80,220,100,200)</color> <!-- R,G,B -->
             <statOffsets>
                 <Beauty>41</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -526,7 +526,7 @@
         <label>sapphire</label>
         <description>A precious gemstone. They are commonly known for their striking blue color.</description>
         <graphicData>
-            <color>(35,81,206)</color>
+            <color>RGBA(35,81,206,210)</color>
         </graphicData>
         <statBases>
             <MarketValue>15.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
@@ -541,7 +541,7 @@
         </statBases>
         <stuffProps>
             <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(15,61,166)</color> <!-- R,G,B -->
+            <color>RGBA(15,61,166,200)</color> <!-- R,G,B -->
             <statOffsets>
                 <Beauty>25</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -658,7 +658,7 @@
         <label>quartz</label>
         <description>One of the most abundant minerals. Quartz makes an excellent gemstone, since it is hard, durable, and usually accepts a brilliant polish.</description>
         <graphicData>
-            <color>(255,255,255)</color>
+            <color>RGBA(255,255,255,220)</color>
         </graphicData>
         <statBases>
             <MarketValue>0.7</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
@@ -673,7 +673,7 @@
         </statBases>
         <stuffProps>
             <commonality>0.05</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
-            <color>(238,238,238)</color> <!-- R,G,B -->
+            <color>RGBA(238,238,238,210)</color> <!-- R,G,B -->
             <statOffsets>
                 <Beauty>2</Beauty> <!-- silver 6 gold 20 jade 10 -->
             </statOffsets>
@@ -1784,6 +1784,38 @@ zoisite
             <statFactors>
                 <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
                 <Beauty>2</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="carnap_GemSimpleBase">
+        <defName>carnap_goshenite</defName>
+        <label>goshenite</label>
+        <description>A highly transparent colorless gem.</description>
+        <graphicData>
+            <color>RGBA(220,220,220,128)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>15.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(220,220,220,128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>25</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.7</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
             </statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->

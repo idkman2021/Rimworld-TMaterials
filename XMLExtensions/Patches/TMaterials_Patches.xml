@@ -1504,7 +1504,7 @@
                         <label>obsidian</label>
                         <description>A brittle volcanic rock formed by rapid cooling of lava.</description>
                         <graphicData>
-                            <color>(39,0,37)</color>
+                            <color>(42, 27, 54)</color>
                         </graphicData>
                         <statBases>
                             <MaxHitPoints>800</MaxHitPoints>
@@ -1542,7 +1542,7 @@
                         <defName>carnap_chunkobsidian</defName>
                         <label>obsidian chunk</label>
                         <graphicData>
-                            <color>(39,0,37)</color>
+                            <color>(42, 27, 54)</color>
                         </graphicData>
                         <statBases>
                             <Mass>25</Mass>
