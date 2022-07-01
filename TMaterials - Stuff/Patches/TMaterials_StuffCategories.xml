@@ -1,0 +1,56 @@
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[
+            defName="SculptureSmall"
+            or defName="SculptureLarge"
+            or defName="SculptureGrand"
+            or defName="UnfinishedSculpture"
+            or defName="TorchLamp"
+            or defName="Darktorch"
+            ]/stuffCategories</xpath>
+        <value>
+            <li>TMaterials_Wax</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[
+            defName="SculptureSmall"
+            or defName="SculptureLarge"
+            or defName="SculptureGrand"
+            or defName="UnfinishedSculpture"
+            ]/stuffCategories</xpath>
+        <value>
+            <li>TMaterials_Putty</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[
+            defName="Wall"
+            ]/stuffCategories</xpath>
+        <value>
+            <li>TMaterials_Inflatable</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[
+            defName="Wall"
+            ]/stuffCategories</xpath>
+        <value>
+            <li>TMaterials_Walls</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>TMaterialsInflatable</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_TMaterials_Inflatable_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+</Patch>

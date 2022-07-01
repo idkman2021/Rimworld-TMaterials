@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <!-- gem -->
+    <ThingDef Name="TMaterials_GemBase" ParentName="ResourceBase" Abstract="True">
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Silver_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Silver_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <smallVolume>true</smallVolume>
+        <stackLimit>500</stackLimit>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>false</smeltable>
+        <stuffProps>
+            <categories>
+                <li>Stony</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+        </stuffProps>
+    </ThingDef>
+
+    <!-- crystal -->
+    <ThingDef Name="TMaterials_GemCrystalBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/crystal</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- diamond -->
+    <ThingDef Name="TMaterials_GemDiamondBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/diamondlike</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- emerald -->
+    <ThingDef Name="TMaterials_GemEmeraldBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/emeraldlike</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- fossil -->
+    <ThingDef Name="TMaterials_GemFossilBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/fossil</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- long -->
+    <ThingDef Name="TMaterials_GemLongBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/long</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- rectangular -->
+    <ThingDef Name="TMaterials_GemRectangularBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/rectangular</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- reflective -->
+    <ThingDef Name="TMaterials_GemReflectiveBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/reflective</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- round -->
+    <ThingDef Name="TMaterials_GemRoundBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/round</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- simple -->
+    <ThingDef Name="TMaterials_GemSimpleBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/simple</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- smooth -->
+    <ThingDef Name="TMaterials_GemSmoothBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/smooth</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- stone -->
+    <ThingDef Name="TMaterials_GemSmoothMatteBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/stone</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- ornamental -->
+    <ThingDef Name="TMaterials_GemSmoothOrnamentalBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/ornamental</texPath>
+        </graphicData>
+    </ThingDef>
+
+        <!-- pearl -->
+        <ThingDef Name="TMaterials_GemSmoothPearlBase" ParentName="TMaterials_GemBase" Abstract="True">
+            <graphicData>
+                <texPath>TMaterials/common/gem/pearl</texPath>
+            </graphicData>
+        </ThingDef>
+
+    <!--============================ diamond ===============================-->
+    <ThingDef ParentName="TMaterials_GemDiamondBase">
+        <defName>TMaterials_GemDiamond</defName>
+        <label>diamond</label>
+        <description>A mineral composed of pure carbon. It is the hardest naturally occurring substance known; it is also the most popular gemstone. Because of their extreme hardness, diamonds have a number of important industrial applications.</description>
+        <graphicData>
+            <color>RGBA(125,242,255,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>50</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>1.66</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.92</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0.3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0.3</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- custom! -->
+            </categories>
+            <commonality>0.01</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(185,242,255,200)</color>
+            <statOffsets>
+                <Beauty>42</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>3.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>10</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>10</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0.4</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+                <!--<MeleeWeapon_CooldownMultiplier>value</MeleeWeapon_CooldownMultiplier> -->
+                <!-- plasteel 0.8 uranium 1.1 stone 1.3 -->
+                <!-- <DoorOpenSpeed>value</DoorOpenSpeed> -->
+                <!-- wood 1.2 uranium 0.75 stone 0.45 -->
+                <MarketValue>2</MarketValue> <!-- stone 0.4 -->
+                <!-- <BedRestEffectiveness>0.9</BedRestEffectiveness> -->
+                <!-- stone 0.9 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ amber ===============================-->
+    <ThingDef ParentName="TMaterials_GemFossilBase">
+        <defName>TMaterials_GemAmber</defName>
+        <label>amber</label>
+        <description>An organic gemstone, forming from the hardened resin of ancient pine trees. Much valued from antiquity to the present, amber is made into a variety of decorative objects.</description>
+        <graphicData>
+            <color>RGBA(255,201,140,210)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.03</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(255,191,0,190)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>17</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToBuild>1.0</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0.7</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ pearl ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothPearlBase">
+        <defName>TMaterials_GemPearl</defName>
+        <label>pearl</label>
+        <description>A hard, glistening material produced within the soft tissue (specifically the mantle) of a living shelled mollusk or another animal, such as fossil conulariids. The finest quality of natural pearls have been highly valued as gemstones and objects of beauty for many centuries. It is fragile, but very beautiful.</description>
+        <graphicData>
+            <color>(226,218,213)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.5</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.35</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.3</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.6</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.01</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(226,218,213)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>17</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.15</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <Flammability>0.0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ ruby ===============================-->
+    <ThingDef ParentName="TMaterials_GemDiamondBase">
+        <defName>TMaterials_GemRuby</defName>
+        <label>ruby</label>
+        <description>An expensive blood-red colored gemstone that has accrued special and symbolic meaning through time.</description>
+        <graphicData>
+            <color>RGBA(195,30,14,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>14.1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(195,30,14,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>24</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>2.3</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ emerald ===============================-->
+    <ThingDef ParentName="TMaterials_GemEmeraldBase">
+        <defName>TMaterials_GemEmerald</defName>
+        <label>emerald</label>
+        <description>A green-colored, highly precious gemstone. The gem is known to symbolize fidelity and true love.</description>
+        <graphicData>
+            <color>RGBA(26, 163, 56, 200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>47.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.54</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(26, 163, 56,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>41</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>3.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ garnet  ===============================-->
+    <ThingDef Name="TMaterials_GarnetBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <graphicData>
+            <texPath>TMaterials/common/gem/garnet</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>33.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <statOffsets>
+                <Beauty>35</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.25</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>3.1</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemAlmandine</defName>
+        <label>almandine</label>
+        <description>A dark red gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>(62,13,16)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(62,13,16)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemSpessartine</defName>
+        <label>spessartine</label>
+        <description>An orange gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(252,143,17,220)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(252,143,17,220)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemRhodolite</defName>
+        <label>rhodolite</label>
+        <description>A pink gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(202,68,128,220)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(202,68,128,220)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemTsavorite</defName>
+        <label>tsavorite</label>
+        <description>An emerald-green gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(35,94,46,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(35,94,46,190)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemHessonite</defName>
+        <label>hessonite</label>
+        <description>An deep brown gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(161,61,45,225)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(161,61,45,225)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemDemantoid</defName>
+        <label>demantoid</label>
+        <description>An emerald-green gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(99,177,70,210)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(99,177,70,210)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemMelanite</defName>
+        <label>melanite</label>
+        <description>A black gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>(10,10,10)</color>
+        </graphicData>
+        <stuffProps>
+            <color>(10,10,10)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GarnetBase">
+        <defName>TMaterials_GemTopazolite</defName>
+        <label>topazolite</label>
+        <description>A rare yellow gem belonging to the garnet group.</description>
+        <graphicData>
+            <color>RGBA(230,229,83,210)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(230,229,83,210)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+
+    <!--============================ uvarovite ===============================-->
+    <ThingDef ParentName="TMaterials_GemBase">
+        <defName>TMaterials_GemUvarovite</defName>
+        <label>uvarovite</label>
+        <description>A very rare gem that is consistently deep green in color. Member of the garnet group. Its most widespread habit is as lustrous, tiny, emerald-green crystals densely coating a matrix.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/uvarovite</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>61.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.0001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(40,115,58)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>50</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>3.7</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ amethyst  ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemAmethyst</defName>
+        <label>amethyst</label>
+        <description>An affordable purple gem.</description>
+        <graphicData>
+            <color>RGBA(173,122,214,220)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.7</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.03</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(153,102,204,220)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>9</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.75</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.2</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ opal  ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothBase">
+        <defName>TMaterials_GemOpal</defName>
+        <label>opal</label>
+        <description>A fragile gem formed from silica-rich waters.</description>
+        <graphicData>
+            <color>(208,225,213)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>27.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(168,195,188)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>35</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ sapphire  ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemSapphire</defName>
+        <label>sapphire</label>
+        <description>A precious gemstone. They are commonly known for their striking blue color.</description>
+        <graphicData>
+            <color>RGBA(35,81,206,210)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>15.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.8</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.8</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(15,61,166,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>25</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>2.8</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.7</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ onyx  ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothOrnamentalBase">
+        <defName>TMaterials_GemOnyx</defName>
+        <label>onyx</label>
+        <description>A black gem.</description>
+        <graphicData>
+            <color>(23,26,27)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.005</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(23,26,27)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>14</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ topaz  ===============================-->
+    <ThingDef ParentName="TMaterials_GemRectangularBase">
+        <defName>TMaterials_GemTopaz</defName>
+        <label>topaz</label>
+        <description>A popular yellow gem.</description>
+        <graphicData>
+            <color>(255,200,124)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.76</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.03</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(255,200,124)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ moonstone  ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothBase">
+        <defName>TMaterials_GemMoonstone</defName>
+        <label>moonstone</label>
+        <description>A blue opalescent gem.</description>
+        <graphicData>
+            <color>(228,233,245)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.015</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(228,233,245)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ quartz  ===============================-->
+    <ThingDef ParentName="TMaterials_GemCrystalBase">
+        <defName>TMaterials_GemQuartz</defName>
+        <label>quartz</label>
+        <description>One of the most abundant minerals. Quartz makes an excellent gemstone, since it is hard, durable, and usually accepts a brilliant polish.</description>
+        <graphicData>
+            <color>RGBA(255,255,255,180)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.015</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.05</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(238,238,238,210)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>6</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.9</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.1</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ zirconia  ===============================-->
+    <ThingDef ParentName="TMaterials_GemReflectiveBase">
+        <defName>TMaterials_GemZirconia</defName>
+        <label>zirconia</label>
+        <description>A natural gemstone popular for an astounding optical splendor that resembles a diamond.</description>
+        <graphicData>
+            <color>RGBA(200,200,200,210)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(200,200,200,210)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.75</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ lapis lazuli  ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothOrnamentalBase">
+        <defName>TMaterials_GemLapislazuli</defName>
+        <label>lapis lazuli</label>
+        <description>A fragile gem valued for its deep blue colour.</description>
+        <graphicData>
+            <color>(13,14,132)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.52</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.16</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.16</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <stuffAdjective>lapis</stuffAdjective>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(13,14,132)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>16</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.35</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.55</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ malachite  ===============================-->
+    <ThingDef ParentName="TMaterials_GemBase">
+        <defName>TMaterials_GemMalachite</defName>
+        <label>malachite</label>
+        <description>A beautiful decorative stone. Its rich, patterned coloration in shades of green is unique among gems.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/malachite</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.62</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.26</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.6</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(4,73,55)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>11</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <WorkToMake>0.9</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>0.9</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <MaxHitPoints>0.25</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ alexandrite  ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemAlexandrite</defName>
+        <label>alexandrite</label>
+        <description>A rare gem well known for displaying one of the most remarkable color changes in the gem world — green in sunlight and red in incandescent light.</description>
+        <graphicData>
+            <color>RGBA(126,87,127,220)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>86.6</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.76</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(126,87,127,220)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>51</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>2.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ ametrine   ===============================-->
+    <ThingDef ParentName="TMaterials_GemSimpleBase">
+        <defName>TMaterials_GemAmetrine</defName>
+        <label>ametrine</label>
+        <description>A gem that combines It combines the purple of amethyst and the golden color of citrine.</description>
+        <graphicData>
+            <color>RGBA(166,116,169,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.025</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(166,116,169,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>14</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.35</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ aquamarine   ===============================-->
+    <ThingDef ParentName="TMaterials_GemLongBase">
+        <defName>TMaterials_GemAquamarine</defName>
+        <label>aquamarine</label>
+        <description>One of the most popular blue gemstones.</description>
+        <graphicData>
+            <color>RGBA(154,193,194,220)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>13</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(154,193,194,220)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>23</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ citrine   ===============================-->
+    <ThingDef ParentName="TMaterials_GemSimpleBase">
+        <defName>TMaterials_GemCitrine</defName>
+        <label>citrine</label>
+        <description>A pale yellow quartz resembling topaz.</description>
+        <graphicData>
+            <color>RGBA(241,175,50,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(241,175,50,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>14</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.9</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ iolite   ===============================-->
+    <ThingDef ParentName="TMaterials_GemSimpleBase">
+        <defName>TMaterials_GemIolite</defName>
+        <label>iolite</label>
+        <description>A blue gemstone.</description>
+        <graphicData>
+            <color>RGBA(81,83,179,220)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(81,83,179,220)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>13</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.0</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ kunzite   ===============================-->
+    <ThingDef ParentName="TMaterials_GemLongBase">
+        <defName>TMaterials_GemKunzite</defName>
+        <label>kunzite</label>
+        <description>A pink gemstone.</description>
+        <graphicData>
+            <color>RGBA(255,186,249,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(255,186,249,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ morganite   ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemMorganite</defName>
+        <label>morganite</label>
+        <description>A light pink gemstone.</description>
+        <graphicData>
+            <color>RGBA(247,223,215,175)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>7.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(247,223,215,175)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>17</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ peridot   ===============================-->
+    <ThingDef ParentName="TMaterials_GemSimpleBase">
+        <defName>TMaterials_GemPeridot</defName>
+        <label>peridot</label>
+        <description>A green gemstone. It glows a brilliant green under artificial light.</description>
+        <graphicData>
+            <color>RGBA(138,252,86,210)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(138,252,86,210)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ spinel    ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemSpinel</defName>
+        <label>spinel</label>
+        <description>A singly refractive and very transparent gemstone found in deep brick red color.</description>
+        <graphicData>
+            <color>RGBA(246,13,114,225)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>26.9</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(246,13,114,225)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>32</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>3.0</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ sunstone    ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothOrnamentalBase">
+        <defName>TMaterials_GemSunstone</defName>
+        <label>sunstone</label>
+        <description>A gem that shows an opaque "schiller" effect where the metallic inclusions reflect light in a blaze of color.</description>
+        <graphicData>
+            <color>(237,196,172)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(237,196,172)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ tanzanite    ===============================-->
+    <ThingDef ParentName="TMaterials_GemEmeraldBase">
+        <defName>TMaterials_GemTanzanite</defName>
+        <label>tanzanite</label>
+        <description>A blue gem which appearance is influenced greatly by its ability to show colors when viewed from different directions.</description>
+        <graphicData>
+            <color>RGBA(23,47,199,210)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>8.3</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(23,47,199,210)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>21</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!--============================ tourmaline     ===============================-->
+    <ThingDef Name="TMaterials_TourmalineBase" ParentName="TMaterials_GemLongBase" Abstract="True">
+        <statBases>
+            <MarketValue>11.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.0001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <statOffsets>
+                <Beauty>21</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.0</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemRubellite</defName>
+        <label>rubellite</label>
+        <description>A transparent red gemstone, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(189,45,86,220)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(189,45,86,220)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemDravite</defName>
+        <label>dravite</label>
+        <description>A greenish-brown gemstone, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(133,98,40,200)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(133,98,40,200)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemLiddicoatite</defName>
+        <label>liddicoatite</label>
+        <description>A type of tourmaline that has a pink center and green perimeter around the outside, resembling a watermelon and it's rind.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/liddicoatite</texPath>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(227,223,110,235)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemElbaite</defName>
+        <label>elbaite</label>
+        <description>A blue coloured gem, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(42,200,216,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(42,200,216,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!-- schorl separate -->
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemIndicolite</defName>
+        <label>indicolite</label>
+        <description>A light blue coloured gem, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(14,161,199,215)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(14,161,199,215)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemSiberite</defName>
+        <label>siberite</label>
+        <description>A violet coloured gem, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(166,72,207,200)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(166,72,207,200)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemParaiba</defName>
+        <label>paraiba</label>
+        <description>Gem known for its bright neon colours, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(153,215,224,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(153,215,224,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemVerdelite</defName>
+        <label>verdelite</label>
+        <description>A green coloured gem, variety of tourmaline.</description>
+        <graphicData>
+            <color>RGBA(126,144,70,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(126,144,70,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemOtourmaline</defName>
+        <label>olive tourmaline</label>
+        <description>Variety of tourmaline with a unique olive-green color.</description>
+        <graphicData>
+            <color>RGBA(85,107,47,220)</color>
+        </graphicData>
+        <stuffProps>
+            <stuffAdjective>tourmaline</stuffAdjective>
+            <color>RGBA(85,107,47,220)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemAchroite</defName>
+        <label>achroite</label>
+        <description>A transparent variety of tourmaline that displays no color. It is the most rare variety of tourmaline, but it isn't expensive due to low demand.</description>
+        <graphicData>
+            <color>RGBA(100,100,100,128)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(100,100,100,128)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_TourmalineBase">
+        <defName>TMaterials_GemCtourmaline</defName>
+        <label>chrome tourmaline</label>
+        <description>Variety of tourmaline with a vivide green color.</description>
+        <graphicData>
+            <color>RGBA(0,173,0,220)</color>
+        </graphicData>
+        <stuffProps>
+            <stuffAdjective>tourmaline</stuffAdjective>
+            <color>RGBA(0,173,0,220)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <!--============================ schorl     ===============================-->
+    <ThingDef ParentName="TMaterials_GemCrystalBase">
+        <defName>TMaterials_GemSchorl</defName>
+        <label>schorl</label>
+        <description>A lustrous black mineral, most common form of tourmaline.</description>
+        <graphicData>
+            <color>(66,66,66)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(66,66,66)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ turquoise     ===============================-->
+    <ThingDef ParentName="TMaterials_GemSmoothOrnamentalBase">
+        <defName>TMaterials_GemTurquoise</defName>
+        <label>turquoise</label>
+        <description>Opaque blue gem.</description>
+        <graphicData>
+            <color>(40,233,233)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(40,233,233)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>16</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ zircon     ===============================-->
+    <ThingDef Name="TMaterials_ZirconBase" ParentName="TMaterials_GemBase" Abstract="True">
+        <description>A natural, semi-precious gemstone, available in a many colors.</description>
+        <graphicData>
+            <texPath>TMaterials/common/gem/zircon</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>7.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <stuffAdjective>zircon</stuffAdjective>
+            <commonality>0.0001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <statOffsets>
+                <Beauty>19</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconPink</defName>
+        <label>pink zircon</label>
+        <graphicData>
+            <color>RGBA(190,65,118,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(190,65,118,190)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconRose</defName>
+        <label>rose zircon</label>
+        <graphicData>
+            <color>RGBA(250,192,239,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(250,192,239,190)</color> <!-- R,G,B -->
+        </stuffProps>
+    </ThingDef>
+
+    <!-- 42 gems -->
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconGolden</defName>
+        <label>golden zircon</label>
+        <graphicData>
+            <color>RGBA(225,197,46,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(225,197,46,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconYellow</defName>
+        <label>yellow zircon</label>
+        <graphicData>
+            <color>RGBA(242,238,52,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(242,238,52,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconLavender</defName>
+        <label>lavender zircon</label>
+        <graphicData>
+            <color>RGBA(155,145,197,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(155,145,197,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconViolet</defName>
+        <label>violet zircon</label>
+        <graphicData>
+            <color>RGBA(105,30,134,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(105,30,134,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconOrange</defName>
+        <label>orange zircon</label>
+        <graphicData>
+            <color>RGBA(237,70,44,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(237,70,44,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconOlive</defName>
+        <label>light olive zircon</label>
+        <graphicData>
+            <color>RGBA(177,183,156,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(177,183,156,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconChampagne</defName>
+        <label>champagne zircon</label>
+        <graphicData>
+            <color>RGBA(248,223,122,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(248,223,122,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconWhite</defName>
+        <label>white zircon</label>
+        <graphicData>
+            <color>RGBA(237,233,245,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(237,233,245,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconBlack</defName>
+        <label>black zircon</label>
+        <graphicData>
+            <color>RGBA(70,66,64,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(70,66,64,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconApple</defName>
+        <label>apple green zircon</label>
+        <graphicData>
+            <color>RGBA(126,180,89,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(126,180,89,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconBrown</defName>
+        <label>brown zircon</label>
+        <graphicData>
+            <color>RGBA(157,63,13,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(157,63,13,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconCoffee</defName>
+        <label>coffee zircon</label>
+        <graphicData>
+            <color>RGBA(97,36,33,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(97,36,33,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_ZirconBase">
+        <defName>TMaterials_GemZirconGreen</defName>
+        <label>green zircon</label>
+        <graphicData>
+            <color>RGBA(41,151,84,190)</color>
+        </graphicData>
+        <stuffProps>
+            <color>RGBA(41,151,84,190)</color>
+        </stuffProps>
+    </ThingDef>
+
+
+    <!--============================ ammolite     ===============================-->
+    <ThingDef ParentName="TMaterials_GemBase">
+        <defName>TMaterials_GemAmmolite</defName>
+        <label>ammolite</label>
+        <description>An opal-like organic gemstone made of the fossilized shells of ammonites.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/ammolite</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(179,167,101)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>18</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.25</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.8</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+    <!-- 
+andalusite
+apatite
+beryl
+bixbite
+blizzard stone
+bloodstone
+fluorite
+carnelian
+diopside
+chrysoberyl
+chrysocolla
+danburite
+agate
+fluorite
+gohenite
+grandidierite
+heliodor
+nephrite
+jadeite
+jasper
+labradorite
+moldavite
+navratna
+padparadscha
+petalite
+petrified wood
+prehnite
+rhodochrosite
+sang-e-maryam
+serpentine
+sodalite
+spectrolite
+taaffeite
+tiger eye
+titanite
+coral
+zoisite 
+-->
+
+
+    <!--============================ andalusite     ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemAndalusite</defName>
+        <label>andalusite</label>
+        <description>A gold colored highly pleochoric gem.</description>
+        <graphicData>
+            <color>RGBA(211,182,114,200)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(211,182,114,200)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>15</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ apatite     ===============================-->
+    <ThingDef ParentName="TMaterials_GemRoundBase">
+        <defName>TMaterials_GemApatite</defName>
+        <label>apatite</label>
+        <description>A gem known for its asparagus green color.</description>
+        <graphicData>
+            <color>RGBA(7,201,207,190)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(7,201,207,190)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>18</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <!--============================ red coral     ===============================-->
+    <ThingDef ParentName="TMaterials_GemBase">
+        <defName>TMaterials_GemRedCoral</defName>
+        <label>red coral</label>
+        <description>An intensely colored red skeleton of marine red corals, used for making jewelry.</description>
+        <graphicData>
+            <texPath>TMaterials/unique/redcoral</texPath>
+        </graphicData>
+        <statBases>
+            <MarketValue>5.0</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(255,64,64)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>18</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.2</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.8</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GemSmoothMatteBase">
+        <defName>TMaterials_GemCarnelian</defName>
+        <label>carnelian</label>
+        <description>A cheap brownish-red mineral that is commonly used as a semi-precious gemstone.</description>
+        <graphicData>
+            <color>(215,96,53)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.9</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>(215,96,53)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>10</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.25</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+    <ThingDef ParentName="TMaterials_GemSimpleBase">
+        <defName>TMaterials_GemGoshenite</defName>
+        <label>goshenite</label>
+        <description>A highly transparent colorless gem.</description>
+        <graphicData>
+            <color>RGBA(220,220,220,128)</color>
+        </graphicData>
+        <statBases>
+            <MarketValue>15.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.72</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.36</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.36</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>1.5</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases>
+        <stuffProps>
+            <commonality>0.001</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(220,220,220,128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>25</Beauty> <!-- silver 6 gold 20 jade 10 -->
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.7</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    </ThingDef>
+
+
+</Defs>

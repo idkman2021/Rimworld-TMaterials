@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>TMaterials_BasicWood</defName>
+    <label>basic wood processing</label>
+    <description>Process wood into large amounts of weak materials like cardboard or paper.</description>
+    <tab>carnap2_TMaterials</tab>
+    <baseCost>200</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+  </ResearchProjectDef>
+
+  <!--============================ cardboard ===============================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_Cardboard</defName>
+    <label>cardboard</label>
+    <description>Sheets of corrugated fiberboard, usually used to make boxes. An extremely cheap material that you can bring with yourself on trips in bulk and use in place of wood to build very quick makeshift structures. Furniture made from cardboard is ugly and uncomfortable.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/cardboard</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.1</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>2.0</Flammability>
+      <MaxHitPoints>40</MaxHitPoints> <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0.16</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0.28</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0.08</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0.4</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <ConstructionSpeedFactor>3.2</ConstructionSpeedFactor> <!-- stone 0.8-->
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>false</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <appearance>TMaterialsPlankWood</appearance>
+      <categories>
+        <li>Woody</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0.01</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(176,145,110)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets>
+        <!---->
+        <Beauty>-2</Beauty>
+        <Comfort>-0.1</Comfort> <!-- silver 6 gold 20 jade 10 -->
+        <BedRestEffectiveness>-0.1</BedRestEffectiveness>
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <Comfort>0.5</Comfort>
+        <MaxHitPoints>0.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Beauty>0.2</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+        <WorkToMake>0.4</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <WorkToBuild>0.4</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+        <Flammability>2</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+        <DoorOpenSpeed>1.4</DoorOpenSpeed> <!-- wood 1.2 uranium 0.75 stone 0.45 -->
+        <MarketValue>0.5</MarketValue> <!-- stone 0.4 -->
+        <BedRestEffectiveness>0.9</BedRestEffectiveness> <!-- stone 0.9 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    <modExtensions>
+      <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <structureGenerationCommonalityFactor>0.1</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0.1</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0.1</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <RecipeDef>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>TMaterials_BasicWood</researchPrerequisite>
+    <defName>TMaterials_Cardboard</defName>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <label>make 100 cardboard</label>
+    <description>Mix bark, pulp and water to make cardboard.</description>
+    <jobString>making cardboard.</jobString>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_Cardboard>100</TMaterials_Cardboard>
+    </products>
+  </RecipeDef>
+
+  <!--============================ paper ===============================-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_Paper</defName>
+    <label>paper</label>
+    <description>A thin sheet material produced from wood. Paper apparel is generally ill-fitting, uncomfortable and won't last very long.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/paper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <generateCommonality>0.01</generateCommonality>
+    <generateAllowChance>0.01</generateAllowChance>
+    <statBases>
+      <MarketValue>0.1</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>2</Flammability> <!-- wood 1.0 - flammability of the item itself!! -->
+      <MaxHitPoints>20</MaxHitPoints> <!-- Stone 200 -->
+      <DeteriorationRate>16</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.15</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0.1</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0.0005</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <color>(251,251,248)</color> <!-- R,G,B -->
+      <allowColorGenerators>true</allowColorGenerators>
+      <statOffsets>
+        <!---->
+        <Beauty>-1</Beauty>
+        <Comfort>-0.1</Comfort> <!-- silver 6 gold 20 jade 10 -->
+        <BedRestEffectiveness>-0.1</BedRestEffectiveness>
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <Beauty>0.3</Beauty>
+        <Comfort>0.5</Comfort>
+        <Flammability>2</Flammability>
+        <MaxHitPoints>0.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <WorkToMake>0.3</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <MarketValue>0.4</MarketValue> <!-- stone 0.4 -->
+        <DeteriorationRate>4</DeteriorationRate>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>TMaterials_BasicWood</researchPrerequisite>
+    <defName>TMaterials_Paper</defName>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <label>make 100 paper</label>
+    <description>Mix bark, pulp and water to make paper.</description>
+    <jobString>making paper.</jobString>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_Paper>100</TMaterials_Paper>
+    </products>
+  </RecipeDef>
+
+  <!--============================ paraffin_wax ===============================-->
+
+  <ResearchProjectDef>
+    <defName>TMaterials_Wax</defName>
+    <label>wax</label>
+    <description>Make paraffin wax from chemfuel. Wax can only be used for making very quick sculptures.</description>
+    <tab>carnap2_TMaterials</tab>
+    <baseCost>400</baseCost>
+    <techLevel>Industrial</techLevel>
+    <researchViewX>0.00</researchViewX>
+    <researchViewY>0.00</researchViewY>
+    <prerequisites>
+      <li>BiofuelRefining</li>
+    </prerequisites>
+  </ResearchProjectDef>
+
+
+  <StuffCategoryDef>
+    <defName>TMaterials_Wax</defName>
+    <label>waxy</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+
+  <StuffAppearanceDef>
+    <defName>TMaterials_Wax</defName>
+  </StuffAppearanceDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_WaxParaffin</defName>
+    <label>paraffin wax</label>
+    <description>A soft solid derived from chemfuel, known for very low melting point. It is mostly used for candles. Very easy to work with, but only useable for making sculptures and torches.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/paraffinwax</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.6</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.4</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>2</Flammability> <!-- wood 1.0 - flammability of the item itself!! -->
+      <MaxHitPoints>20</MaxHitPoints> <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0.1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0.1</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <!-- <ConstructionSpeedFactor>value</ConstructionSpeedFactor> -->
+      <!-- stone 0.8-->
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <appearance>TMaterials_Wax</appearance>
+      <stuffAdjective>wax</stuffAdjective>
+      <categories>
+        <li>TMaterials_Wax</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0.0</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(243,227,194)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets>
+        <!---->
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <MaxHitPoints>0.07</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Beauty>0.3</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+        <WorkToMake>0.2</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <WorkToBuild>0.2</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+        <Flammability>2</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    <!--
+    <modExtensions>
+      <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
+  -->
+  </ThingDef>
+
+  <RecipeDef>
+    <recipeUsers>
+      <li>BiofuelRefinery</li>
+    </recipeUsers>
+    <researchPrerequisite>TMaterials_Wax</researchPrerequisite>
+    <defName>TMaterials_Wax</defName>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <label>make 25 wax</label>
+    <description>Obtain wax from chemfuel.</description>
+    <jobString>making wax.</jobString>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Chemfuel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_WaxParaffin>25</TMaterials_WaxParaffin>
+    </products>
+  </RecipeDef>
+
+  <!--============================ plasticine_green ===============================-->
+  <StuffCategoryDef>
+    <defName>TMaterials_Putty</defName>
+    <label>putty</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+
+  <ThingDef ParentName="ResourceBase" Name="TMaterials_PuttyBase" Abstract="True">
+    <label>putty</label>
+    <description>A putty-like modelling material. Plasticine is used for children's play and as a modelling medium. Very easy to work with, but too soft to be able to make more permanent structures. Can only be used for making sculptures.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/plasticinegreen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>3.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.6</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <!-- <Flammability>value</Flammability> -->
+      <!-- wood 1.0 - flammability of the item itself!! -->
+      <!-- <MaxHitPoints>value</MaxHitPoints> -->
+      <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0.01</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0.1</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <ConstructionSpeedFactor>8</ConstructionSpeedFactor> <!-- stone 0.8-->
+    </statBases>
+    <useHitPoints>false</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <!-- <stuffAdjective>string</stuffAdjective> -->
+      <categories>
+        <li>TMaterials_Putty</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(3,140,103)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets>
+        <!---->
+        <Beauty>-4</Beauty> <!-- silver 6 gold 20 jade 10 -->
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <MaxHitPoints>0.01</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Beauty>0.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+        <WorkToMake>0.05</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <WorkToBuild>0.05</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+        <Flammability>0.6</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+        <MeleeWeapon_CooldownMultiplier>3</MeleeWeapon_CooldownMultiplier> <!-- plasteel 0.8 uranium 1.1 stone 1.3 -->
+        <DoorOpenSpeed>0.1</DoorOpenSpeed> <!-- wood 1.2 uranium 0.75 stone 0.45 -->
+        <MarketValue>0.1</MarketValue> <!-- stone 0.4 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    <!--
+    <modExtensions>
+      <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
+  -->
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_PuttyBase">
+    <defName>TMaterials_PuttyBlue</defName>
+    <label>blue putty</label>
+    <graphicData>
+      <texPath>TMaterials/unique/plasticinegreen</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <!--============================ plasticine_blue ===============================-->
+  <ThingDef ParentName="TMaterials_PuttyBase">
+    <defName>TMaterials_PuttyGreen</defName>
+    <label>green putty</label>
+    <graphicData>
+      <texPath>TMaterials/unique/plasticineblue</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <!--============================ plasticine_red ===============================-->
+  <ThingDef ParentName="TMaterials_PuttyBase">
+    <defName>TMaterials_PuttyRed</defName>
+    <label>red putty</label>
+    <graphicData>
+      <texPath>TMaterials/unique/plasticinered</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <!--============================ plasticine_yellow ===============================-->
+  <ThingDef ParentName="TMaterials_PuttyBase">
+    <defName>TMaterials_PuttyYellow</defName>
+    <label>yellow putty</label>
+    <graphicData>
+      <texPath>TMaterials/unique/plasticineyellow</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <!--============================ polystyrene_foam ===============================-->
+  <!--
+  <StuffCategoryDef>
+    <defName>TMaterials_Foam</defName>
+    <label>foamy</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+-->
+  <StuffAppearanceDef>
+    <defName>TMaterialsFoam</defName>
+  </StuffAppearanceDef>
+
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_PolystyreneFoam</defName>
+    <label>polystyrene foam</label>
+    <description>Lightweight foamed polystyrene useful for packaging. Not so useful for survival.</description>
+    <generateCommonality>0</generateCommonality>
+    <generateAllowChance>0</generateAllowChance>
+    <graphicData>
+      <texPath>TMaterials/unique/polystyrenefoam</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.01</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>0.4</Flammability>
+      <MaxHitPoints>80</MaxHitPoints>
+      <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>3</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0.001</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0.001</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <!-- <ConstructionSpeedFactor>value</ConstructionSpeedFactor> -->
+      <!-- stone 0.8-->
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <appearance>TMaterialsFoam</appearance>
+      <stuffAdjective>foam</stuffAdjective>
+      <categories>
+        <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(243,249,249)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets>
+        <!---->
+        <Beauty>-3</Beauty> <!-- silver 6 gold 20 jade 10 -->
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <MaxHitPoints>0.01</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Beauty>0.01</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+        <WorkToMake>2</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <WorkToBuild>2</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+        <Flammability>0.4</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+        <MeleeWeapon_CooldownMultiplier>2</MeleeWeapon_CooldownMultiplier> <!-- plasteel 0.8 uranium 1.1 stone 1.3 -->
+        <MarketValue>0.1</MarketValue> <!-- stone 0.4 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+    <modExtensions>
+      <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <structureGenerationCommonalityFactor>0</structureGenerationCommonalityFactor>
+        <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+        <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <!-- toilet paper -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_ToiletPaper</defName>
+    <label>toilet paper</label>
+    <description>Paper in sheets or on a roll. Not meant to be used for making clothes and therefore extremely fragile, but some people are desperate enough.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/toiletpaper</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <generateCommonality>0.001</generateCommonality>
+    <generateAllowChance>0.001</generateAllowChance>
+    <statBases>
+      <MarketValue>0.2</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.02</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>2</Flammability> <!-- wood 1.0 - flammability of the item itself!! -->
+      <MaxHitPoints>10</MaxHitPoints> <!-- Stone 200 -->
+      <DeteriorationRate>16</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.04</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0.08</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0.04</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>1</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>1</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0.00005</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <color>RGBA(234,238,240,214)</color> <!-- R,G,B -->
+      <allowColorGenerators>true</allowColorGenerators>
+      <statOffsets>
+        <!---->
+        <Beauty>-3</Beauty>
+        <Comfort>-0.1</Comfort> <!-- silver 6 gold 20 jade 10 -->
+        <BedRestEffectiveness>-0.1</BedRestEffectiveness>
+      </statOffsets>
+      <statFactors>
+        <!---->
+        <Beauty>0.2</Beauty>
+        <Comfort>0.7</Comfort>
+        <Flammability>3</Flammability>
+        <MaxHitPoints>0.05</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <WorkToMake>0.1</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+        <MarketValue>0.4</MarketValue> <!-- stone 0.4 -->
+        <DeteriorationRate>8</DeteriorationRate>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef>
+    <defName>TMaterials_ToiletPaper</defName>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <researchPrerequisite>TMaterials_BasicWood</researchPrerequisite>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <label>make 50 toilet paper</label>
+    <description>Mix bark, pulp and water to make toilet paper.</description>
+    <jobString>making toilet paper.</jobString>
+    <workAmount>1000</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>WoodLog</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>WoodLog</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_ToiletPaper>50</TMaterials_ToiletPaper>
+    </products>
+  </RecipeDef>
+
+
+  <!-- INFLATABLES -->
+  <StuffCategoryDef>
+    <defName>TMaterials_Inflatable</defName>
+    <label>inflatable</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+
+  <StuffAppearanceDef>
+    <defName>TMaterialsInflatable</defName>
+  </StuffAppearanceDef>
+
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_Inflatable</defName>
+    <label>inflatable fabric</label>
+    <description>Rolls of polyurethane reinforced with cloth of an assortment of different colors, able to be filled with air to make inflatable toys. You can build your own inflatable castle!
+WIP: better textures, appearances.</description>
+    <graphicData>
+      <texPath>TMaterials/unique/inflatable</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>2.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.1</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>0.4</Flammability>
+      <!-- wood 1.0 - flammability of the item itself!! -->
+      <MaxHitPoints>180</MaxHitPoints>
+      <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <ConstructionSpeedFactor>6</ConstructionSpeedFactor>
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <appearance>TMaterialsInflatable</appearance>
+      <stuffAdjective>inflatable</stuffAdjective>
+      <categories>
+        <li>TMaterials_Inflatable</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(220,220,50)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets></statOffsets>
+      <statFactors>
+        <MaxHitPoints>0.04</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Flammability>0.3</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+        <MarketValue>0.4</MarketValue> <!-- stone 0.4 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+  </ThingDef>
+
+  <StuffAppearanceDef>
+    <defName>TMaterials_ToyParts</defName>
+  </StuffAppearanceDef>
+
+  <!-- toy -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_ToyParts</defName>
+    <label>toy parts</label>
+    <description>Assorted toy parts. You can use them to make useless toy variants of any stuffable item. 
+WIP: texture, appearances</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(252,208,218)</color>
+    </graphicData>
+    <soundInteract>Wood_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+    <soundDrop>Wood_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.8</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+      <Mass>0.18</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+      <Flammability>0.2</Flammability>
+      <!-- wood 1.0 - flammability of the item itself!! -->
+      <MaxHitPoints>180</MaxHitPoints>
+      <!-- Stone 200 -->
+      <StuffPower_Armor_Sharp>0</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+      <StuffPower_Armor_Blunt>0</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+      <StuffPower_Armor_Heat>0</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+      <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+      <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+      <SharpDamageMultiplier>0</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+      <BluntDamageMultiplier>0</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+      <ConstructionSpeedFactor>2</ConstructionSpeedFactor>
+    </statBases>
+    <useHitPoints>true</useHitPoints> <!-- should raw resource item have hitpoints -->
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>true</smeltable> <!-- idk maybe if can smelt? -->
+    <stuffProps>
+      <appearance>TMaterials_ToyParts</appearance>
+      <stuffAdjective>toy</stuffAdjective>
+      <categories>
+        <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+      </categories>
+      <commonality>0</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+      <constructEffect>ConstructWood</constructEffect> <!-- ConstructMetal ConstructWood -->
+      <color>(252,208,218)</color> <!-- R,G,B -->
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+      <statOffsets></statOffsets>
+      <statFactors>
+        <Beauty>0.1</Beauty>
+        <MaxHitPoints>0.1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+        <Flammability>0.3</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+        <MarketValue>0.1</MarketValue> <!-- stone 0.4 -->
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+  </ThingDef>
+
+</Defs>
