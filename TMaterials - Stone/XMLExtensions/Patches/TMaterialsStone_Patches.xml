@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Stone</modId>
+        <key>TMaterials_TMaterials_AncientFossil</key>
+        <defaultValue>true</defaultValue>
+        <caseFalse>
+            <Operation Class="PatchOperationRemove">
+                <success>Always</success>
+                <xpath>
+                    Defs/ThingDef[defName="TMaterials_AncientFossil" or defName="TMaterials_SmoothedAncientFossil" or defName="TMaterials_ChunkAncientFossil"] | 
+                    Defs/RecipeDef[defName="TMaterials_Make_StoneBlocksAncientFossil" or defName="EM_Make_CobblestoneAncientFossil"] | 
+                    Defs/TerrainDef[defName="TileBlocksAncientFossil" or defName="FlagstoneBlocksAncientFossil"]
+                </xpath>
+            </Operation>
+
+            <Operation Class="PatchOperationAttributeSet">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_BlocksAncientFossil"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>TMaterials_DisabledStoneBlocksBase</value>
+            </Operation>
+        </caseFalse>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Stone</modId>
+        <key>TMaterials_TMaterials_AncientStone</key>
+        <defaultValue>true</defaultValue>
+        <caseFalse>
+            <Operation Class="PatchOperationRemove">
+                <success>Always</success>
+                <xpath>
+                    Defs/ThingDef[defName="TMaterials_AncientStone" or defName="TMaterials_SmoothedAncientStone" or defName="TMaterials_ChunkAncientStone"] | 
+                    Defs/RecipeDef[defName="TMaterials_Make_StoneBlocksAncientStone" or defName="EM_Make_CobblestoneAncientStone"] | 
+                    Defs/TerrainDef[defName="TileBlocksAncientStone" or defName="FlagstoneBlocksAncientStone"]
+                </xpath>
+            </Operation>
+
+            <Operation Class="PatchOperationAttributeSet">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_BlocksAncientStone"]</xpath>
+                <attribute>ParentName</attribute>
+                <value>TMaterials_DisabledStoneBlocksBase</value>
+            </Operation>
+        </caseFalse>
+    </Operation>
+
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Stone</modId>
+        <key>TMaterials_StoneRarity</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+
+            <Operation Class="XmlExtensions.UseSetting">
+                <modId>carnap2.TMaterials.Stone</modId>
+                <key>TMaterials_StoneRarityChoice</key>
+                <defaultValue>10</defaultValue>
+                <apply>
+                    <Operation Class="XmlExtensions.PatchByCase">
+                        <value>{TMaterials_StoneRarityChoice}</value>
+                        <cases>
+                            <li>
+                                <value>5</value>
+                                <apply>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>SandstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>GraniteBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>LimestoneBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>SlateBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>MarbleBase</li>
+                                            <li>2</li>
+                                            <li>25</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>EM_BasaltBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>EM_ShaleBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>EM_SiltstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName5</patchName>
+                                        <arguments>
+                                            <li>EM_SchistBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Andesite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Basalt</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Claystone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Diorite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Mudstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Schist</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Siltstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Shale</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Tuff</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Dacite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Gabbro</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Gneiss</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Pegmatite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Phyllite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Scoria</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity3</patchName>
+                                        <arguments>
+                                            <li>Soapstone</li>
+                                        </arguments>
+                                    </Operation>
+                                </apply>
+                            </li>
+                            <li>
+                                <value>10</value>
+                                <apply>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>SandstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>GraniteBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>LimestoneBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>SlateBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>MarbleBase</li>
+                                            <li>2</li>
+                                            <li>25</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>EM_BasaltBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>EM_ShaleBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>EM_SiltstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName10</patchName>
+                                        <arguments>
+                                            <li>EM_SchistBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Andesite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Basalt</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Claystone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Diorite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Mudstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Schist</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Siltstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Shale</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity7</patchName>
+                                        <arguments>
+                                            <li>Tuff</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Dacite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Gabbro</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Gneiss</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Pegmatite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Phyllite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Scoria</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity5</patchName>
+                                        <arguments>
+                                            <li>Soapstone</li>
+                                        </arguments>
+                                    </Operation>
+                                </apply>
+                            </li>
+                            <!--
+                            <li>
+                                <value>15</value>
+                                <apply>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>SandstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>GraniteBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>LimestoneBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>SlateBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>MarbleBase</li>
+                                            <li>2</li>
+                                            <li>25</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>EM_BasaltBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>EM_ShaleBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>EM_SiltstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName15</patchName>
+                                        <arguments>
+                                            <li>EM_SchistBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Andesite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Basalt</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Claystone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Diorite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Mudstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Schist</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Siltstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Shale</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Tuff</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Dacite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Gabbro</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Gneiss</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Pegmatite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Phyllite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Scoria</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity10</patchName>
+                                        <arguments>
+                                            <li>Soapstone</li>
+                                        </arguments>
+                                    </Operation>
+                                </apply>
+                            </li>
+                        -->
+                            <!-- 
+                            <li>
+                                <value>25</value>
+                                <apply>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>SandstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>GraniteBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>LimestoneBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>SlateBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>MarbleBase</li>
+                                            <li>2</li>
+                                            <li>25</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>EM_BasaltBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>EM_ShaleBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>EM_SiltstoneBase</li>
+                                            <li>1</li>
+                                            <li>18</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarityName25</patchName>
+                                        <arguments>
+                                            <li>EM_SchistBase</li>
+                                            <li>1</li>
+                                            <li>20</li>
+                                        </arguments>
+                                    </Operation>
+                                    
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Andesite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Basalt</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Claystone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Diorite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Mudstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Schist</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Siltstone</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity20</patchName>
+                                        <arguments>
+                                            <li>Shale</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity8</patchName>
+                                        <arguments>
+                                            <li>Tuff</li>
+                                        </arguments>
+                                    </Operation>
+
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity6</patchName>
+                                        <arguments>
+                                            <li>Dacite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Gabbro</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Gneiss</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Pegmatite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Phyllite</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Scoria</li>
+                                        </arguments>
+                                    </Operation>
+                                    <Operation Class="XmlExtensions.ApplyPatch">
+                                        <patchName>TMAddRarity4</patchName>
+                                        <arguments>
+                                            <li>Soapstone</li>
+                                        </arguments>
+                                    </Operation>
+                                </apply>
+                            </li>
+                        -->
+                        </cases>
+                    </Operation>
+                </apply>
+            </Operation>
+
+
+        </caseTrue>
+        <caseFalse></caseFalse>
+    </Operation>
+
+
+</Patch>

@@ -1,0 +1,2467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase" Name="TMaterials_CustomStoneBlocksBase" Abstract="True">
+    <description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <Beauty>-12</Beauty>
+      <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.01</commonality> <!-- because there are so many stone types -->
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+        <WorkToMake>1.3</WorkToMake>
+        <DoorOpenSpeed>0.45</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase" Name="TMaterials_DisabledStoneBlocksBase" Abstract="True">
+    <description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <Beauty>-12</Beauty>
+      <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0</commonality> <!-- because there are so many stone types -->
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+        <WorkToMake>1.3</WorkToMake>
+        <DoorOpenSpeed>0.45</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+  <!--  <ThingDef ParentName="ResourceBase" Name="StoneBlocksBase" Abstract="True">
+    <description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <Beauty>-12</Beauty>
+      <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+        <WorkToMake>1.3</WorkToMake>
+        <DoorOpenSpeed>0.45</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    </ThingDef> -->
+
+
+  <!--                              tuff                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksTuff</defName>
+    <label>tuff blocks</label>
+    <description>Blocks of solid tuff. It is relatively soft and easy to build with.</description>
+    <graphicData>
+      <color>(194,174,147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>0.5</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.45</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(194,174,147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>tuff</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <Beauty>0.9</Beauty> <!-- sandstone 1.1 slate 1.1 marble 1.35 -->
+        <MaxHitPoints>1.2</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>3.5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>0.95</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksTuff</defName>
+    <label>make tuff blocks</label>
+    <description>Cuts tuff chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkTuff</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkTuff</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkTuff</defName>
+    <label>tuff chunk</label>
+    <graphicData>
+      <color>(194,174,147)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_TuffBase" Name="TMaterials_SmoothedTuffBase">
+    <defName>TMaterials_SmoothedTuff</defName>
+    <label>smoothed tuff</label>
+    <description>A soft rock formed by consolidation of volcanic ash. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_TuffBase">
+    <defName>TMaterials_Tuff</defName>
+    <label>tuff</label>
+    <description>A soft rock formed by consolidation of volcanic ash.</description>
+    <graphicData>
+      <color>(194,174,147)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkTuff</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedTuff</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneTuff</defName>
+    <label>make tuff cobblestone</label>
+    <description>Smashes tuff chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkTuff</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkTuff</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneTuff>35</EM_CobblestoneTuff>
+    </products>
+  </RecipeDef>
+
+  <ThingDef MayRequire="Argon.ExpandedMaterials.Stones" ParentName="EM_CobblestoneBase">
+    <defName>EM_CobblestoneTuff</defName>
+    <label>tuff cobblestone</label>
+    <description>tuff smashed down to cobblestone. A soft rock formed by consolidation of volcanic ash.</description>
+    <graphicData>
+      <color>(194,174,147)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(194,174,147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>tuff</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksTuff</defName>
+    <label>tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksTuff</defName>
+    <label>tuff flagstone</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <!-- PARENT NAMES DON'T WORK!!! -->
+  <!-- ideology -->
+  <TerrainDef ParentName="MorbidStoneTile" MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>Tile_MorbidBlocksTuff</defName>
+    <label>morbid tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="SpikecoreStoneTile" MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>Tile_SpikecoreBlocksTuff</defName>
+    <label>tuff spikecore tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TotemicStoneTile" MayRequire="Ludeon.RimWorld.Ideology">
+    <defName>Tile_TotemicBlocksTuff</defName>
+    <label>totemic tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <!-- royalty -->
+  <TerrainDef ParentName="FineTileStoneBase" MayRequire="Ludeon.RimWorld.Royalty">
+    <defName>FineTileBlocksTuff</defName>
+    <label>fine tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <!-- alpha memes -->
+  <!--
+  <TerrainDef ParentName="AM_JewishTileStoneBase" MayRequire="Sarg.AlphaMemes">
+    <defName>AM_JewishTileBlocksTuff</defName>
+    <label>jewish tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="AM_JewishFineStoneTiles" MayRequire="Sarg.AlphaMemes">
+    <defName>AM_JewishFineTileBlocksTuff</defName>
+    <label>jewish fine tuff tile</label>
+
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="AM_KemeticTileStoneBase" MayRequire="Sarg.AlphaMemes">
+    <defName>AM_KemeticTileBlocksTuff</defName>
+    <label>kemetic tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="AM_KemeticFineStoneTiles" MayRequire="Sarg.AlphaMemes">
+    <defName>AM_KemeticFineTileBlocksTuff</defName>
+    <label>kemetic fine tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="AM_SteampunkTileStoneBase" MayRequire="Sarg.AlphaMemes">
+    <defName>AM_SteampunkTileBlocksTuff</defName>
+    <label>steampunk tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+-->
+  <!-- viemas -->
+  <!--
+  <TerrainDef ParentName="VME_CorporateFineStoneTiles" MayRequire="VanillaExpanded.VMemesE">
+    <defName>VME_CorporateFineTileBlocksTuff</defName>
+    <label>corporate fine tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="VME_ShintaoFineStoneTiles" MayRequire="VanillaExpanded.VMemesE">
+    <defName>VME_ShintaoFineTileBlocksTuff</defName>
+    <label>shintao fine tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+-->
+  <!-- vfea -->
+  <!--
+  <TerrainDef ParentName="CobblestoneBase" MayRequire="VanillaExpanded.VFEArchitect">
+    <defName>VFEArch_CobblestoneFloorBlocksTuff</defName>
+    <label>tuff cobblestone floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="PolishedStoneFloorBase" MayRequire="VanillaExpanded.VFEArchitect">
+    <defName>VFEArch_PolishedStoneFloorBlocksTuff</defName>
+    <label>tuff polished stone floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>12</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="StoneSlabsBase" MayRequire="VanillaExpanded.VFEArchitect">
+    <defName>VFEArch_SlabsBlocksTuff</defName>
+    <label>tuff slabs</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>8</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="StoneBridgeBase" MayRequire="VanillaExpanded.VFEArchitect">
+    <defName>VFEArch_BridgeBlocksTuff</defName>
+    <label>tuff bridge</label>
+    <color>(194,174,147)</color>
+    <uiIconPath>StoneBridge/StoneBridge_MenuIcon</uiIconPath>
+    <costList>
+      <TMaterials_BlocksTuff>12</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+-->
+  <!-- morefloors -->
+  <!--
+  <TerrainDef ParentName="TFloorBaseStoneSlabs" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneSlabsBlocksTuff</defName>
+    <label>stone slabs (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneStaggered" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneStaggeredBlocksTuff</defName>
+    <label>staggered stone tiles (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneRough" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneRoughBlocksTuff</defName>
+    <label>rough paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>2</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneAlternating" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneAlternatingBlocksTuff</defName>
+    <label>alternating brick paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneChequeredSingle" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneChequeredBlocksTuff</defName>
+    <label>chequered slabs (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneHerringbone" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneHerringboneBlocksTuff</defName>
+    <label>herringbone paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneHex" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneHexBlocksTuff</defName>
+    <label>hex paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>3</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneDigital" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneDigitalBlocksTuff</defName>
+    <label>digital paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneMosaic" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneMosaicBlocksTuff</defName>
+    <label>mosaic paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <renderPrecedence>268</renderPrecedence>
+    <costList>
+      <TMaterials_BlocksTuff>5</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneRandom" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneRandomBlocksTuff</defName>
+    <label>random paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneDiamond" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneDiamondBlocksTuff</defName>
+    <label>diamond paving (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="TFloorBaseStoneArabesque" MayRequire="Telkir.TMods.MoreFloors">
+    <defName>FloorStoneArabesqueBlocksTuff</defName>
+    <label>arabesque flooring (tuff)</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+-->
+  <!-- wd -->
+  <!--
+  <TerrainDef ParentName="WDRoughStoneTileBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDRoughBlocksTuffTile</defName>
+    <label>rough tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDStoneTileBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDBlocksTuffTile</defName>
+    <label>smooth tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDCheckStoneTileBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDCheckBlocksTuffTile</defName>
+    <label>check tuff tile</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDCheckStoneFloorBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDCheckBlocksTuffFloor</defName>
+    <label>check tuff floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDMosaicStoneFloorBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDMosaicBlocksTuffFloor</defName>
+    <label>mosaic tuff floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>4</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDPolishedStoneFloorBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDPolishedBlocksTuffFloor</defName>
+    <label>polished tuff floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="WDStonePlateFloorBase" MayRequire="Wemd.ExpandedFloors">
+    <defName>WDBlocksTuffPlateFloor</defName>
+    <label>tuff plate floor</label>
+    <color>(194,174,147)</color>
+    <costList>
+      <TMaterials_BlocksTuff>20</TMaterials_BlocksTuff>
+    </costList>
+  </TerrainDef>
+-->
+  <!-- auderys-->
+  <!-- evt -->
+  <!-- vfe -->
+
+
+  <!--                              desert glass                          -->
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksDesertGlass</defName>
+    <label>desert glass blocks</label>
+    <description>Blocks of solid desert glass.</description>
+    <graphicData>
+      <color>RGBA(220,208,163,150)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.4</MarketValue>
+      <Mass>0.5</Mass>
+      <SharpDamageMultiplier>1</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.01</commonality>
+      <color>RGBA(220,208,163,150)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>desert glass</stuffAdjective>
+      <statFactors>
+        <Beauty>1.2</Beauty>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <WorkToBuild>6</WorkToBuild>
+        <WorkToMake>2</WorkToMake>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <statOffsets>
+        <Beauty>2</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksDesertGlass</defName>
+    <label>make desert glass blocks</label>
+    <description>Cuts desert glass chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkDesertGlass</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkDesertGlass</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksDesertGlass>20</TMaterials_BlocksDesertGlass>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkDesertGlass</defName>
+    <label>desert glass chunk</label>
+    <graphicData>
+      <color>RGBA(220,208,163,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksDesertGlass>20</TMaterials_BlocksDesertGlass>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_DesertGlassBase" Name="TMaterials_SmoothedDesertGlassBase">
+    <defName>TMaterials_SmoothedDesertGlass</defName>
+    <label>smoothed desert glass</label>
+    <description>Solid desert glass formed by radiative melting of sandstone from large aerial bursts. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_DesertGlassBase">
+    <defName>TMaterials_DesertGlass</defName>
+    <label>desert glass</label>
+    <description>Solid desert glass formed by radiative melting of sandstone from large aerial bursts.</description>
+    <graphicData>
+      <color>RGBA(220,208,163,135)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkDesertGlass</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedDesertGlass</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneDesertGlass</defName>
+    <label>make desert glass cobblestone</label>
+    <description>Smashes desert glass chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkDesertGlass</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkDesertGlass</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneDesertGlass>35</EM_CobblestoneDesertGlass>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneDesertGlass</defName>
+    <label>desert glass cobblestone</label>
+    <description>desert glass smashed down to cobblestone. Solid desert glass formed by radiative melting of sandstone from large aerial bursts.</description>
+    <graphicData>
+      <color>RGBA(220,208,163,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>RGBA(220,208,163,135)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>desert glass</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.0</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksDesertGlass</defName>
+    <label>desert glass tile</label>
+    <color>RGBA(220,208,163,135)</color>
+    <costList>
+      <TMaterials_BlocksDesertGlass>4</TMaterials_BlocksDesertGlass>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksDesertGlass</defName>
+    <label>desert glass flagstone</label>
+    <color>RGBA(220,208,163,135)</color>
+    <costList>
+      <TMaterials_BlocksDesertGlass>4</TMaterials_BlocksDesertGlass>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              soapstone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksSoapstone</defName>
+    <label>soapstone blocks</label>
+    <description>Blocks of solid soapstone. It is a very soft stone and easy to work with, but it isn't durable.</description>
+    <graphicData>
+      <color>(57,64,66)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.8</MarketValue> <!-- base 0.9 -->
+      <Mass>0.8</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <!-- <BluntDamageMultiplier></BluntDamageMultiplier> -->
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(57,64,66)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>soapstone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.3</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.1</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>2.5</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.3</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksSoapstone</defName>
+    <label>make soapstone blocks</label>
+    <description>Cuts soapstone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkSoapstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkSoapstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksSoapstone>20</TMaterials_BlocksSoapstone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkSoapstone</defName>
+    <label>soapstone chunk</label>
+    <graphicData>
+      <color>(57,64,66)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksSoapstone>20</TMaterials_BlocksSoapstone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_SoapstoneBase" Name="TMaterials_SmoothedSoapstoneBase">
+    <defName>TMaterials_SmoothedSoapstone</defName>
+    <label>smoothed soapstone</label>
+    <description>A very soft rock converted from various minerals through a combination of heating, pressure and time. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_SoapstoneBase">
+    <defName>TMaterials_Soapstone</defName>
+    <label>soapstone</label>
+    <description>A very soft rock converted from various minerals through a combination of heating, pressure and time.</description>
+    <graphicData>
+      <color>(57,64,66)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkSoapstone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedSoapstone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneSoapstone</defName>
+    <label>make soapstone cobblestone</label>
+    <description>Smashes soapstone chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkSoapstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkSoapstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneSoapstone>35</EM_CobblestoneSoapstone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneSoapstone</defName>
+    <label>soapstone cobblestone</label>
+    <description>soapstone smashed down to cobblestone. A very soft rock converted from various minerals through a combination of heating, pressure and time.</description>
+    <graphicData>
+      <color>(57,64,66)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(57,64,66)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>soapstone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>0.8</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksSoapstone</defName>
+    <label>soapstone tile</label>
+    <color>(57,64,66)</color>
+    <costList>
+      <TMaterials_BlocksSoapstone>4</TMaterials_BlocksSoapstone>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksSoapstone</defName>
+    <label>soapstone flagstone</label>
+    <color>(57,64,66)</color>
+    <costList>
+      <TMaterials_BlocksSoapstone>4</TMaterials_BlocksSoapstone>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              pumice                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksPumice</defName>
+    <label>pumice blocks</label>
+    <description>Blocks of solid pumice. Pumice is a very light porous stone, and can even float on water because of pockets of gas in its pores.</description>
+    <graphicData>
+      <color>(202,198,191)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue> <!-- base 0.9 -->
+      <Mass>0.25</Mass> <!-- sandstone 1 granite 1.25 limestone 1.1 slate 0.9 marble 1.25 --> <!-- 1 = 2300, 1.1 - 1.25 = 2700,  -->
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier> <!-- base 0.6 sandstone 0.5 granite 0.65 -->
+      <BluntDamageMultiplier>0.7</BluntDamageMultiplier>
+      <!-- base 1.0 -->
+      <!-- <Beauty>value</Beauty> -->
+      <!-- base -12 -->
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality> <!-- base 0.2 -->
+      <color>(202,198,191)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>pumice</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.4</MarketValue> <!-- base 0.4 -->
+        <MaxHitPoints>1.25</MaxHitPoints> <!-- base 1.8 sandstone 1.4 granite 1.7 limestone 1.55 slate 1.3 marble 1.2 -->
+        <WorkToBuild>4</WorkToBuild> <!-- base 6 sandstone 5 mable 5.5-->
+        <WorkToMake>1.1</WorkToMake> <!-- base 1.3 sandstone 1.1 marble 1.15-->
+        <Flammability>0</Flammability> <!-- base 0 -->
+        <MeleeWeapon_CooldownMultiplier>0.7</MeleeWeapon_CooldownMultiplier> <!-- base 1.3 -->
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksPumice</defName>
+    <label>make pumice blocks</label>
+    <description>Cuts pumice chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkPumice</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkPumice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksPumice>20</TMaterials_BlocksPumice>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkPumice</defName>
+    <label>pumice chunk</label>
+    <graphicData>
+      <color>(202,198,191)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksPumice>20</TMaterials_BlocksPumice>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_PumiceBase" Name="TMaterials_SmoothedPumiceBase">
+    <defName>TMaterials_SmoothedPumice</defName>
+    <label>smoothed pumice</label>
+    <description>A very porous rock produced when lava with a very high content of water and gases is discharged from a volcano. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_PumiceBase">
+    <defName>TMaterials_Pumice</defName>
+    <label>pumice</label>
+    <description>A very porous rock produced when lava with a very high content of water and gases is discharged from a volcano.</description>
+    <graphicData>
+      <color>(202,198,191)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>320</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkPumice</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedPumice</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestonePumice</defName>
+    <label>make pumice cobblestone</label>
+    <description>Smashes pumice chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkPumice</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkPumice</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestonePumice>35</EM_CobblestonePumice>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestonePumice</defName>
+    <label>pumice cobblestone</label>
+    <description>pumice smashed down to cobblestone. A very porous rock produced when lava with a very high content of water and gases is discharged from a volcano.</description>
+    <graphicData>
+      <color>(202,198,191)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(202,198,191)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>pumice</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.1</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksPumice</defName>
+    <label>pumice tile</label>
+    <color>(202,198,191)</color>
+    <costList>
+      <TMaterials_BlocksPumice>4</TMaterials_BlocksPumice>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksPumice</defName>
+    <label>pumice flagstone</label>
+    <color>(202,198,191)</color>
+    <costList>
+      <TMaterials_BlocksPumice>4</TMaterials_BlocksPumice>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              phyllite                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksPhyllite</defName>
+    <label>phyllite blocks</label>
+    <description>Blocks of solid phyllite.</description>
+    <graphicData>
+      <color>(77,76,64)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.1</Mass>
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality>
+      <color>(77,76,64)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>phyllite</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.55</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksPhyllite</defName>
+    <label>make phyllite blocks</label>
+    <description>Cuts phyllite chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkPhyllite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkPhyllite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksPhyllite>20</TMaterials_BlocksPhyllite>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkPhyllite</defName>
+    <label>phyllite chunk</label>
+    <graphicData>
+      <color>(77,76,64)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksPhyllite>20</TMaterials_BlocksPhyllite>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_PhylliteBase" Name="TMaterials_SmoothedPhylliteBase">
+    <defName>TMaterials_SmoothedPhyllite</defName>
+    <label>smoothed phyllite</label>
+    <description>A fine-grained metamorphic rock with a well-developed laminar structure. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_PhylliteBase">
+    <defName>TMaterials_Phyllite</defName>
+    <label>phyllite</label>
+    <description>A fine-grained metamorphic rock with a well-developed laminar structure.</description>
+    <graphicData>
+      <color>(77,76,64)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkPhyllite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedPhyllite</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestonePhyllite</defName>
+    <label>make phyllite cobblestone</label>
+    <description>Smashes phyllite chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkPhyllite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkPhyllite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestonePhyllite>35</EM_CobblestonePhyllite>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestonePhyllite</defName>
+    <label>phyllite cobblestone</label>
+    <description>phyllite smashed down to cobblestone. A fine-grained metamorphic rock with a well-developed laminar structure.</description>
+    <graphicData>
+      <color>(77,76,64)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(77,76,64)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>phyllite</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksPhyllite</defName>
+    <label>phyllite tile</label>
+    <color>(77,76,64)</color>
+    <costList>
+      <TMaterials_BlocksPhyllite>4</TMaterials_BlocksPhyllite>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksPhyllite</defName>
+    <label>phyllite flagstone</label>
+    <color>(77,76,64)</color>
+    <costList>
+      <TMaterials_BlocksPhyllite>4</TMaterials_BlocksPhyllite>
+    </costList>
+  </TerrainDef>
+
+  <!--                              lunar stone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksLunarRock</defName>
+    <label>lunar stone blocks</label>
+    <description>Blocks of solid lunar rock.</description>
+    <graphicData>
+      <color>(138,127,141)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.4</MarketValue>
+      <Mass>1.3</Mass>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>lunar</stuffAdjective>
+      <commonality>0.05</commonality>
+      <color>(138,127,141)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksLunarRock</defName>
+    <label>make lunar rock blocks</label>
+    <description>Cuts lunar rock chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkLunarrock</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkLunarrock</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksLunarRock>20</TMaterials_BlocksLunarRock>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkLunarrock</defName>
+    <label>lunar rock chunk</label>
+    <graphicData>
+      <color>(138,127,141)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksLunarRock>20</TMaterials_BlocksLunarRock>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_LunarRockBase" Name="TMaterials_SmoothedLunarRockBase">
+    <defName>TMaterials_SmoothedLunarRock</defName>
+    <label>smoothed lunar rock</label>
+    <description>A huge piece of moon rock fallen onto the planet after collisions with space debrees. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_LunarRockBase">
+    <defName>TMaterials_LunarRock</defName>
+    <label>lunar rock</label>
+    <description>A huge piece of moon rock fallen onto the planet after collisions with space debrees.</description>
+    <graphicData>
+      <color>(138,127,141)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkLunarrock</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedLunarRock</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneLunarRock</defName>
+    <label>make lunar rock cobblestone</label>
+    <description>Smashes lunar rock chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkLunarrock</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkLunarrock</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneLunarRock>35</EM_CobblestoneLunarRock>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneLunarRock</defName>
+    <label>lunar rock cobblestone</label>
+    <description>lunar rock smashed down to cobblestone. An incredibly hard rock that originally formed a moon, but due to collisions with space debree huge pieces often hit the planet.</description>
+    <graphicData>
+      <color>(138,127,141)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(138,127,141)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>lunar rock</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.8</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksLunarRock</defName>
+    <label>lunar tile</label>
+    <color>(138,127,141)</color>
+    <costList>
+      <TMaterials_BlocksLunarRock>4</TMaterials_BlocksLunarRock>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksLunarRock</defName>
+    <label>lunar flagstone</label>
+    <color>(138,127,141)</color>
+    <costList>
+      <TMaterials_BlocksLunarRock>4</TMaterials_BlocksLunarRock>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              meteorite stone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksMeteoriteRock</defName>
+    <label>meteorite stone blocks</label>
+    <description>Blocks of solid meteorite stone.</description>
+    <graphicData>
+      <color>(106,69,67)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>2.8</MarketValue>
+      <Mass>1.55</Mass>
+    </statBases>
+    <stuffProps>
+      <stuffAdjective>meteorite</stuffAdjective>
+      <commonality>0.05</commonality>
+      <color>(106,69,67)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>2.4</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksMeteoriteRock</defName>
+    <label>make meteorite rock blocks</label>
+    <description>Cuts meteorite rock chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkMeteoriterock</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkMeteoriterock</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksMeteoriteRock>20</TMaterials_BlocksMeteoriteRock>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkMeteoriterock</defName>
+    <label>meteorite rock chunk</label>
+    <graphicData>
+      <color>(106,69,67)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksMeteoriteRock>20</TMaterials_BlocksMeteoriteRock>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_MeteoriteRockBase" Name="TMaterials_SmoothedMeteoriteRockBase">
+    <defName>TMaterials_SmoothedMeteoriteRock</defName>
+    <label>smoothed meteorite rock</label>
+    <description>Rocky remains of a meteorite. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_MeteoriteRockBase">
+    <defName>TMaterials_MeteoriteRock</defName>
+    <label>meteorite rock</label>
+    <description>Rocky remains of a meteorite, very tough to dig through.</description>
+    <graphicData>
+      <color>(106,69,67)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1700</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkMeteoriterock</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedMeteoriteRock</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneMeteoriteRock</defName>
+    <label>make meteorite rock cobblestone</label>
+    <description>Smashes meteorite rock chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkMeteoriterock</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkMeteoriterock</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneMeteoriteRock>35</EM_CobblestoneMeteoriteRock>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneMeteoriteRock</defName>
+    <label>meteorite rock cobblestone</label>
+    <description>meteorite rock smashed down to cobblestone. An incredibly heavy and tough rock that originally formed a meteorite.</description>
+    <graphicData>
+      <color>(106,69,67)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(106,69,67)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>meteorite rock</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>2</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksMeteoriteRock</defName>
+    <label>meteorite tile</label>
+    <color>(106,69,67)</color>
+    <costList>
+      <TMaterials_BlocksMeteoriteRock>4</TMaterials_BlocksMeteoriteRock>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksMeteoriteRock</defName>
+    <label>meteorite flagstone</label>
+    <color>(106,69,67)</color>
+    <costList>
+      <TMaterials_BlocksMeteoriteRock>4</TMaterials_BlocksMeteoriteRock>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              coquina                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksCoquina</defName>
+    <label>coquina blocks</label>
+    <description>Blocks of solid coquina.</description>
+    <graphicData>
+      <color>(210,189,161)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.1</Mass>
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality>
+      <color>(210,189,161)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>coquina</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.4</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksCoquina</defName>
+    <label>make coquina blocks</label>
+    <description>Cuts coquina chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkCoquina</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkCoquina</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksCoquina>20</TMaterials_BlocksCoquina>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkCoquina</defName>
+    <label>coquina chunk</label>
+    <graphicData>
+      <color>(210,189,161)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksCoquina>20</TMaterials_BlocksCoquina>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_CoquinaBase" Name="TMaterials_SmoothedCoquinaBase">
+    <defName>TMaterials_SmoothedCoquina</defName>
+    <label>smoothed coquina</label>
+    <description>A soft rock composed of broken shells. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_CoquinaBase">
+    <defName>TMaterials_Coquina</defName>
+    <label>coquina</label>
+    <description>A soft rock composed of broken shells.</description>
+    <graphicData>
+      <color>(210,189,161)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkCoquina</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedCoquina</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneCoquina</defName>
+    <label>make coquina cobblestone</label>
+    <description>Smashes coquina chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkCoquina</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkCoquina</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneCoquina>35</EM_CobblestoneCoquina>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneCoquina</defName>
+    <label>coquina cobblestone</label>
+    <description>coquina smashed down to cobblestone. A soft rock composed of broken shells.</description>
+    <graphicData>
+      <color>(210,189,161)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(210,189,161)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>coquina</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.2</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksCoquina</defName>
+    <label>coquina tile</label>
+    <color>(210,189,161)</color>
+    <costList>
+      <TMaterials_BlocksCoquina>4</TMaterials_BlocksCoquina>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksCoquina</defName>
+    <label>coquina flagstone</label>
+    <color>(210,189,161)</color>
+    <costList>
+      <TMaterials_BlocksCoquina>4</TMaterials_BlocksCoquina>
+    </costList>
+  </TerrainDef>
+
+
+  <!--                              Dirt                          -->
+
+  <StuffCategoryDef>
+    <defName>TMaterials_Dirt</defName>
+    <label>dirty</label>
+    <destroySoundSmall>BuildingDestroyed_Stone_Small</destroySoundSmall>
+    <destroySoundMedium>BuildingDestroyed_Stone_Medium</destroySoundMedium>
+    <destroySoundLarge>BuildingDestroyed_Stone_Big</destroySoundLarge>
+  </StuffCategoryDef>
+
+  <StuffAppearanceDef>
+    <defName>TMaterials_Dirt</defName>
+  </StuffAppearanceDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>TMaterials_BlocksDirt</defName>
+    <label>dirt blocks</label>
+    <description>A clump of mud and soil compacted into usable blocks. Can be used to build very weak and ugly walls.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(112,84,62)</color>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>0.1</MarketValue>
+      <Beauty>-24</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>TMaterials_Dirt</li>
+      </categories>
+      <appearance>TMaterials_Dirt</appearance>
+      <commonality>0</commonality>
+      <color>(112,84,62)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>dirt</stuffAdjective>
+      <statOffsets>
+        <Beauty>-2</Beauty>
+        <Cleanliness>-2</Cleanliness>
+      </statOffsets>
+      <statFactors>
+        <Beauty>0</Beauty>
+        <MarketValue>0.1</MarketValue>
+        <MaxHitPoints>0.2</MaxHitPoints>
+        <Flammability>0.4</Flammability>
+        <WorkToBuild>0.5</WorkToBuild>
+        <WorkToMake>0.5</WorkToMake>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <allowedArchonexusCount>100</allowedArchonexusCount>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_MakeBlocksDirt</defName>
+    <label>make dirt blocks</label>
+    <jobString>Compacting dirt clump into blocks.</jobString>
+    <description>Compacts dirt clumps into usable blocks.</description>
+    <recipeUsers>
+      <li>CraftingSpot</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkDirt</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkDirt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksDirt>20</TMaterials_BlocksDirt>
+    </products>
+  </RecipeDef>
+
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkDirt</defName>
+    <label>dirt clump</label>
+    <statBases>
+      <Beauty>-12</Beauty>
+      <BeautyOutdoors>-8</BeautyOutdoors>
+      <Cleanliness>-6</Cleanliness>
+      <Mass>5</Mass>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <flipExtraRotation>80</flipExtraRotation>
+      <color>(112,84,62)</color>
+    </graphicData>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksDirt>20</TMaterials_BlocksDirt>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_DirtBase" Name="TMaterials_SmoothedDirtBase">
+    <defName>TMaterials_SmoothedDirt</defName>
+    <label>flattened dirt</label>
+    <description>A huge pile of compacted mud with soil. It was flattened to look slightly less ugly.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <MarketValue>1</MarketValue>
+      <ConstructionSpeedFactor>4</ConstructionSpeedFactor>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_DirtBase">
+    <defName>TMaterials_Dirt</defName>
+    <label>dirt</label>
+    <description>A huge ugly pile of compacted mud with soil.</description>
+    <graphicData>
+      <color>(112,84,62)</color>
+      <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Beauty>-6</Beauty>
+      <ConstructionSpeedFactor>4</ConstructionSpeedFactor>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkDirt</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <!--<smoothedThing>TMaterials_SmoothedDirt</smoothedThing>-->
+    </building>
+  </ThingDef>
+
+  <!--
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneDirt</defName>
+    <label>make Dirt cobblestone</label>
+    <description>Smashes Dirt chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkDirt</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkDirt</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneDirt>35</EM_CobblestoneDirt>
+    </products>
+  </RecipeDef>
+-->
+
+  <!--
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneDirt</defName>
+    <label>Dirt cobblestone</label>
+    <description>Dirt smashed down to cobblestone. A unique rock of unknown origin. It absorbs 99% light, making it look like a pitch black void.</description>
+    <graphicData>
+      <color>(0,0,0)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(0,0,0)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>Dirt</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.5</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+-->
+  <!--
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksDirt</defName>
+    <label>Dirt tile</label>
+    <color>(0,0,0)</color>
+    <costList>
+      <TMaterials_BlocksDirt>4</TMaterials_BlocksDirt>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksDirt</defName>
+    <label>Dirt flagstone</label>
+    <color>(0,0,0)</color>
+    <costList>
+      <TMaterials_BlocksDirt>4</TMaterials_BlocksDirt>
+    </costList>
+  </TerrainDef>
+-->
+
+  <!--                              AncientFossil                          -->
+
+
+  <ThingDef ParentName="TMaterials_CustomStoneBlocksBase">
+    <defName>TMaterials_BlocksAncientFossil</defName>
+    <label>ancient fossil</label>
+    <description>blocks of ancient fossil reinforced by various accumulating minerals.</description>
+    <graphicData>
+      <color>(227,218,201)</color>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.6</Mass>
+      <Flammability>0.8</Flammability>
+      <MaxHitPoints>300</MaxHitPoints>
+    </statBases>
+    <burnableByRecipe>true</burnableByRecipe>
+    <useHitPoints>true</useHitPoints>
+    <stuffProps>
+      <categories>
+        <li>Woody</li>
+      </categories>
+      <commonality>0.01</commonality>
+      <color>(227,218,201)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>fossil</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <Flammability>0.8</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksAncientFossil</defName>
+    <label>make ancient fossil blocks</label>
+    <description>Cuts ancient fossil pieces into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkAncientFossil</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkAncientFossil</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksAncientFossil>20</TMaterials_BlocksAncientFossil>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkAncientFossil</defName>
+    <label>ancient fossil piece</label>
+    <graphicData>
+      <color>(227,218,201)</color>
+      <texPath>Things/Item/Chunk/ChunkStone</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <flipExtraRotation>80</flipExtraRotation>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksAncientFossil>20</TMaterials_BlocksAncientFossil>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_AncientFossilBase" Name="TMaterials_SmoothedAncientFossilBase">
+    <defName>TMaterials_SmoothedAncientFossil</defName>
+    <label>smoothed ancient fossil</label>
+    <description>Part of a giant skeleton. It has been polished to a flat, smooth surface. Polishing reveals the inner structure of the bone, beautiful but highly flammable.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <MarketValue>24</MarketValue>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_AncientFossilBase">
+    <defName>TMaterials_AncientFossil</defName>
+    <label>ancient fossil</label>
+    <description>Part of a giant skeleton, remains of an enormous ancient creature. It is covered in minerals, and inside lies a beautiful but flammable structure that can be revealed by polishing.</description>
+    <graphicData>
+      <color>(227,218,201)</color>
+      <texPath>Things/Building/Linked/Rock_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-1</Beauty>
+      <Flammability>0.04</Flammability>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkAncientFossil</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedAncientFossil</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneAncientFossil</defName>
+    <label>make ancient fossil cobblestone</label>
+    <description>Smashes ancient fossil pieces into cobblestone.</description>
+    <workAmount>300</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkAncientFossil</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkAncientFossil</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneAncientFossil>35</EM_CobblestoneAncientFossil>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneAncientFossil</defName>
+    <label>ancient fossil cobblestone</label>
+    <description>Ancient fossil smashed down to cobblestone.</description>
+    <graphicData>
+      <color>(227,218,201)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <Flammability>0.8</Flammability>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+    <useHitPoints>true</useHitPoints>
+    <burnableByRecipe>true</burnableByRecipe>
+    <stuffProps>
+      <color>(227,218,201)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>fossil</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Flammability>0.8</Flammability>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+  <!--
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksAncientFossil</defName>
+    <label>ancient fossil tile</label>
+    <color>(210,189,161)</color>
+    <costList>
+      <TMaterials_BlocksAncientFossil>4</TMaterials_BlocksAncientFossil>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksAncientFossil</defName>
+    <label>ancient fossil flagstone</label>
+    <color>(210,189,161)</color>
+    <costList>
+      <TMaterials_BlocksAncientFossil>4</TMaterials_BlocksAncientFossil>
+    </costList>
+  </TerrainDef>
+-->
+
+  <!--                              AncientStone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksAncientStone</defName>
+    <label>ancient stone blocks</label>
+    <description>Blocks of ancient stone. It is filled with many ancient carvings.</description>
+    <graphicData>
+      <color>(185,170,151)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.2</Mass>
+    </statBases>
+    <stuffProps>
+      <commonality>0.01</commonality>
+      <color>(185,170,151)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>ancient stone</stuffAdjective>
+      <statOffsets>
+        <Beauty>6</Beauty>
+      </statOffsets>
+      <statFactors>
+        <MaxHitPoints>1.7</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksAncientStone</defName>
+    <label>make ancient stone blocks</label>
+    <description>Cuts ancient stone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkAncientStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkAncientStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksAncientStone>20</TMaterials_BlocksAncientStone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkAncientStone</defName>
+    <label>ancient stone chunk</label>
+    <graphicData>
+      <color>(185,170,151)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+      <Beauty>4</Beauty>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksAncientStone>20</TMaterials_BlocksAncientStone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_AncientStoneBase" Name="TMaterials_SmoothedAncientStoneBase">
+    <defName>TMaterials_SmoothedAncientStone</defName>
+    <label>smoothed ancient stone</label>
+    <description>An extremely old rock that has seen many civilisations rise and fall. It has been polished to a flat, smooth surface, revealing many ancient carvings.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>4</Beauty>
+      <MarketValue>30</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_AncientStoneBase">
+    <defName>TMaterials_AncientStone</defName>
+    <label>ancient stone</label>
+    <description>An extremely old rock that has seen many civilisations rise and fall. It is filled with ancient art and carvings.</description>
+    <graphicData>
+      <color>(185,170,151)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkAncientStone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedAncientStone</smoothedThing>
+    </building>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneAncientStone</defName>
+    <label>make ancient cobblestone</label>
+    <description>Smashes ancient stone chunks into cobblestone. This destroys all the ancient carvings.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkAncientStone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkAncientStone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneAncientStone>35</EM_CobblestoneAncientStone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneAncientStone</defName>
+    <label>ancient cobblestone</label>
+    <description>Ancient stone smashed down to generic cobblestone.</description>
+    <graphicData>
+      <color>(185,170,151)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(185,170,151)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>AncientStone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.2</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksAncientStone</defName>
+    <label>ancient stone tile</label>
+    <color>(185,170,151)</color>
+    <statBases>
+      <Beauty>2</Beauty>
+    </statBases>
+    <costList>
+      <TMaterials_BlocksAncientStone>4</TMaterials_BlocksAncientStone>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksAncientStone</defName>
+    <label>ancient stone flagstone</label>
+    <color>(185,170,151)</color>
+    <costList>
+      <TMaterials_BlocksAncientStone>4</TMaterials_BlocksAncientStone>
+    </costList>
+  </TerrainDef>
+
+</Defs>

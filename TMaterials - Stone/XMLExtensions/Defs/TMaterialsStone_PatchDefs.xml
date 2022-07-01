@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- the SettingsMenuDef with two tabs defined. All other tabs are added by patches -->
+<Defs>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity2" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity3" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity4" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    
+    <XmlExtensions.PatchDef Name="TMAddRarity5" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+        
+    <XmlExtensions.PatchDef Name="TMAddRarity6" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity7" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity8" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}8r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity9" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}8r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}9r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    
+    <XmlExtensions.PatchDef Name="TMAddRarity10" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}8r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}9r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}10r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarity15" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}11r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}12r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}13r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}14r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}15r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}8r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}9r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}10r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}11r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}11r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}12r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}12r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}13r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}13r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}14r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}14r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}15r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}15r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+        
+    <XmlExtensions.PatchDef Name="TMAddRarity20" Abstract="True">
+        <parameters>
+            <li>stone</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[defName="TMaterials_{stone}"]</xpath>
+                <value>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}2r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}11r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}12r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}13r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}14r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}15r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}16r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}17r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}18r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}19r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_Smoothed{stone}Base">
+                        <defName>TMaterials_Smoothed{stone}20r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}2r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}3r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}4r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}5r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}6r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}7r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}8r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}9r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}10r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}11r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}11r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}12r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}12r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}13r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}13r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}14r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}14r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}15r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}15r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}16r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}16r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}17r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}17r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}18r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}18r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}19r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}19r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterials_{stone}Base">
+                        <defName>TMaterials_{stone}20r</defName>
+                        <building>
+                            <smoothedThing>TMaterials_Smoothed{stone}20r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarityName5" Abstract="True">
+        <parameters>
+            <li>name</li>
+            <li>value</li>
+            <li>beauty</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[@Name="{name}"]</xpath>
+                <value>
+                    <ThingDef ParentName="{name}" Name="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}2r</defName>
+                        <label>smoothed {name}</label>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>{beauty}</Beauty>
+                            <MarketValue>{value}</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_2r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_3r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_4r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_5r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarityName10" Abstract="True">
+        <parameters>
+            <li>name</li>
+            <li>value</li>
+            <li>beauty</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[@Name="{name}"]</xpath>
+                <value>
+                    <ThingDef ParentName="{name}" Name="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}2r</defName>
+                        <label>smoothed {name}</label>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>{beauty}</Beauty>
+                            <MarketValue>{value}</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_2r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_3r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_4r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_5r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_6r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_7r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_8r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_9r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_10r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarityName15" Abstract="True">
+        <parameters>
+            <li>name</li>
+            <li>value</li>
+            <li>beauty</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[@Name="{name}"]</xpath>
+                <value>
+                    <ThingDef ParentName="{name}" Name="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}2r</defName>
+                        <label>smoothed {name}</label>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>{beauty}</Beauty>
+                            <MarketValue>{value}</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}11r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}12r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}13r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}14r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}15r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_2r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_3r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_4r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_5r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_6r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_7r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_8r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_9r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_10r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_11r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}11r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_12r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}12r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_13r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}13r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_14r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}14r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_15r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}15r</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+
+    <XmlExtensions.PatchDef Name="TMAddRarityName20" Abstract="True">
+        <parameters>
+            <li>name</li>
+            <li>value</li>
+            <li>beauty</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[@Name="{name}"]</xpath>
+                <value>
+                    <ThingDef ParentName="{name}" Name="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}2r</defName>
+                        <label>smoothed {name}</label>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>{beauty}</Beauty>
+                            <MarketValue>{value}</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}11r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}12r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}13r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}14r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}15r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}16r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}17r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}18r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}19r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}20r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_2r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_3r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_4r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_5r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_6r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_7r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_8r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_9r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_10r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_11r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}11r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_12r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}12r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_13r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}13r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_14r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}14r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_15r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}15r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_16r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}16r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_17r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}17r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_18r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}18r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_19r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}19r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_20r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}20r</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+    <XmlExtensions.PatchDef Name="TMAddRarityName25" Abstract="True">
+        <parameters>
+            <li>name</li>
+            <li>value</li>
+            <li>beauty</li>
+        </parameters>
+        <apply>
+            <Operation Class="PatchOperationInsert">
+                <success>Always</success>
+                <xpath>Defs/ThingDef[@Name="{name}"]</xpath>
+                <value>
+                    <ThingDef ParentName="{name}" Name="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}2r</defName>
+                        <label>smoothed {name}</label>
+                        <graphicData>
+                            <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+                        </graphicData>
+                        <statBases>
+                            <Beauty>{beauty}</Beauty>
+                            <MarketValue>{value}</MarketValue>
+                        </statBases>
+                        <building>
+                            <isNaturalRock>false</isNaturalRock>
+                            <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+                            <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+                            <smoothedThing />
+                        </building>
+                        <saveCompressible>false</saveCompressible>
+                        <repairEffect>Repair</repairEffect>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}3r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}4r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}5r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}6r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}7r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}8r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}9r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}10r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}11r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}12r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}13r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}14r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}15r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}16r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}17r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}18r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}19r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}20r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}21r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}22r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}23r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}24r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="TMaterialsRarity_Smoothed{name}">
+                        <defName>Smoothed{name}25r</defName>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_2r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}2r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_3r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}3r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_4r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}4r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_5r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}5r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_6r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}6r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_7r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}7r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_8r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}8r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_9r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}9r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_10r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}10r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_11r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}11r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_12r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}12r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_13r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}13r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_14r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}14r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_15r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}15r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_16r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}16r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_17r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}17r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_18r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}18r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_19r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}19r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_20r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}20r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_21r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}21r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_22r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}22r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_23r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}23r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_24r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}24r</smoothedThing>
+                        </building>
+                    </ThingDef>
+                    <ThingDef ParentName="{name}">
+                        <defName>{name}_25r</defName>
+                        <building>
+                            <smoothedThing>Smoothed{name}25r</smoothedThing>
+                        </building>
+                    </ThingDef>
+
+                </value>
+            </Operation>
+        </apply>
+    </XmlExtensions.PatchDef>
+
+</Defs>

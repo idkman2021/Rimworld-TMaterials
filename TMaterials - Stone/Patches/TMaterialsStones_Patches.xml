@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/stuffCategories</xpath>
+        <value>
+            <li>TMaterials_Dirt</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef [defName = "Wall"]/uiIconPathsStuff</xpath>
+        <value>
+            <li>
+                <appearance>TMaterials_Dirt</appearance>
+                <iconPath>Things/Building/Linked/Wall/Wall_TMaterials_Dirt_MenuIcon</iconPath>
+            </li>
+        </value>
+    </Operation>
+</Patch>

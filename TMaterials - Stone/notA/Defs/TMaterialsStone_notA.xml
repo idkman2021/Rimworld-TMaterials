@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <!--  <ThingDef ParentName="ResourceBase" Name="StoneBlocksBase" Abstract="True">
+    <description>Blocks of stone. Mostly useful for building long-lasting, simple structures.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/StoneBlocks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Stone_Drop</soundInteract>
+    <soundDrop>Stone_Drop</soundDrop>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Buyable</tradeability>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <MarketValue>0.9</MarketValue>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+      <BluntDamageMultiplier>1.0</BluntDamageMultiplier>
+      <Beauty>-12</Beauty>
+      <ConstructionSpeedFactor>0.8</ConstructionSpeedFactor>
+    </statBases>
+    <thingCategories>
+      <li>StoneBlocks</li>
+    </thingCategories>
+    <burnableByRecipe>false</burnableByRecipe>
+    <minRewardCount>10</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Stony</li>
+      </categories>
+      <commonality>0.20</commonality>
+      <appearance>Bricks</appearance>
+      <statOffsets>
+        <WorkToBuild>140</WorkToBuild>
+      </statOffsets>
+      <statFactors>
+        <MarketValue>0.4</MarketValue>
+        <MaxHitPoints>1.8</MaxHitPoints>
+        <Flammability>0</Flammability>
+        <WorkToBuild>6.0</WorkToBuild>
+        <WorkToMake>1.3</WorkToMake>
+        <DoorOpenSpeed>0.45</DoorOpenSpeed>
+        <BedRestEffectiveness>0.9</BedRestEffectiveness>
+        <MeleeWeapon_CooldownMultiplier>1.30</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    </ThingDef> -->
+
+
+
+
+  <!--                              Mudstone                          -->
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>TMaterials_BlocksMudstone</defName>
+    <label>mudstone blocks</label>
+    <description>Blocks of solid mudstone. It is rather ugly.</description>
+    <graphicData>
+      <color>(206,196,147)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.9</MarketValue>
+      <Mass>1.15</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <commonality>0.05</commonality>
+      <color>(206,196,147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>mudstone</stuffAdjective>
+      <statFactors>
+        <MarketValue>0.3</MarketValue>
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <WorkToBuild>5</WorkToBuild>
+        <WorkToMake>1.1</WorkToMake>
+        <Flammability>0</Flammability>
+        <MeleeWeapon_CooldownMultiplier>1.3</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+      <statOffsets>
+        <Beauty>-1</Beauty>
+      </statOffsets>
+    </stuffProps>
+  </ThingDef>
+
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>TMaterials_Make_StoneBlocksMudstone</defName>
+    <label>make mudstone blocks</label>
+    <description>Cuts mudstone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkMudstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkMudstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <TMaterials_BlocksMudstone>20</TMaterials_BlocksMudstone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>TMaterials_ChunkMudstone</defName>
+    <label>mudstone chunk</label>
+    <graphicData>
+      <color>(206,196,147)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <TMaterials_BlocksMudstone>20</TMaterials_BlocksMudstone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="TMaterials_MudstoneBase" Name="TMaterials_SmoothedMudstoneBase">
+    <defName>TMaterials_SmoothedMudstone</defName>
+    <label>smoothed mudstone</label>
+    <description>An ugly rock formed from consolidated mud. It has been polished to a flat, smooth surface.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>-2</Beauty>
+      <MarketValue>21</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef ParentName="UglyRockBase" Name="TMaterials_MudstoneBase">
+    <defName>TMaterials_Mudstone</defName>
+    <label>mudstone</label>
+    <description>An ugly rock formed from consolidated mud.</description>
+    <graphicData>
+      <color>(206,196,147)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>TMaterials_ChunkMudstone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>TMaterials_SmoothedMudstone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <RecipeDef ParentName="EM_MakeCobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_Make_CobblestoneMudstone</defName>
+    <label>make mudstone cobblestone</label>
+    <description>Smashes mudstone chunks into cobblestone.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>TMaterials_ChunkMudstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>TMaterials_ChunkMudstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <EM_CobblestoneMudstone>35</EM_CobblestoneMudstone>
+    </products>
+  </RecipeDef>
+
+  <ThingDef ParentName="EM_CobblestoneBase" MayRequire="Argon.ExpandedMaterials.Stones">
+    <defName>EM_CobblestoneMudstone</defName>
+    <label>mudstone cobblestone</label>
+    <description>mudstone smashed down to cobblestone. An ugly rock formed from consolidated mud.</description>
+    <graphicData>
+      <color>(206,196,147)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.6</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(206,196,147)</color>
+      <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>mudstone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.2</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>TileBlocksMudstone</defName>
+    <label>mudstone tile</label>
+    <color>(206,196,147)</color>
+    <costList>
+      <TMaterials_BlocksMudstone>4</TMaterials_BlocksMudstone>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>FlagstoneBlocksMudstone</defName>
+    <label>mudstone flagstone</label>
+    <color>(206,196,147)</color>
+    <costList>
+      <TMaterials_BlocksMudstone>4</TMaterials_BlocksMudstone>
+    </costList>
+  </TerrainDef>
+
+
+</Defs>

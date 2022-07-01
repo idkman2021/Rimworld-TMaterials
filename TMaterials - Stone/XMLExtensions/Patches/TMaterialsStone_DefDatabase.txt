@@ -1,0 +1,3721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+<!--
+    
+    <Operation Class="XmlExtensions.DefDatabaseLog">
+        <objPath>TerrainDef/[defName="TMaterials_Mudstone5r_Rough"]/renderPrecedence</objPath>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Stone</modId>
+        <key>TMaterials_StoneRarity</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+
+
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="401"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="402"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="403"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="404"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="405"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="406"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="407"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="408"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="409"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="410"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="411"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="412"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="413"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="414"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="415"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="416"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="417"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="418"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="419"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="420"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="421"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="422"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="423"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="424"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="425"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="426"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="427"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="428"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="429"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="430"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="431"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="432"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="433"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="434"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="435"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="436"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="437"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="438"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="439"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="440"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="441"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="442"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="443"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="444"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="445"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="446"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="447"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="448"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="449"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="450"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="451"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="452"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="453"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="454"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="455"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="456"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="457"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="458"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="459"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="460"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="461"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="462"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="463"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="464"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="465"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="466"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="467"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="468"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="469"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="470"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="471"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="472"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="473"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="474"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="475"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="476"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="477"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="478"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="479"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="480"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="481"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="482"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="483"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="484"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="485"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="486"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="487"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="488"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="489"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="490"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="491"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="492"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="493"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="494"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="495"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="496"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="497"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="498"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="499"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="500"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="501"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="502"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="503"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="504"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="505"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="506"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="507"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="508"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="509"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="510"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="511"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="512"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="513"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="514"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="515"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="516"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="517"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="518"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="519"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="520"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="521"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="522"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="523"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="524"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="525"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="526"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="527"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="528"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="529"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="530"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="531"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="532"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="533"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="534"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="535"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="536"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="537"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="538"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="539"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="540"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="541"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="542"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="543"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="544"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="545"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="546"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="547"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="548"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="549"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="550"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="551"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="552"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="553"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="554"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="555"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="556"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="557"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="558"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="559"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="560"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="561"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="562"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="563"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="564"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="565"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="566"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="567"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="568"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="569"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="570"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="571"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="572"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="573"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="574"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="575"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="576"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="577"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="578"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="579"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="580"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="581"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="582"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="583"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="584"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="585"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="586"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="587"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="588"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="589"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="590"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="591"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="592"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="593"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="594"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="595"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="596"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="597"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="598"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="599"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="600"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="601"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="602"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="603"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="604"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="605"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="606"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="607"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="608"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="609"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="610"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="611"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="612"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="613"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="614"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="615"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="616"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="617"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="618"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="619"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="620"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="621"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="622"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="623"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="624"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="625"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="626"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="627"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="628"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="629"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="630"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="631"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="632"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="633"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="634"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="635"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="636"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="637"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="638"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="639"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="640"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="641"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="642"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="643"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="644"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="645"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="646"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="647"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="648"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="649"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="650"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="651"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="652"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="653"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="654"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="655"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="656"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="657"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="658"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="659"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="660"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="661"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="662"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="663"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="664"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="665"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="666"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="667"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="668"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="669"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="670"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="671"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="672"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="673"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="674"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="675"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="676"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="677"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="678"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="679"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="680"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="681"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="682"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="683"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="684"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="685"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="686"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="687"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="688"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="689"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="690"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="691"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="692"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="693"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="694"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="695"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="696"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="697"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="698"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="699"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="700"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="701"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="702"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="703"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="704"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="705"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="706"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="707"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="708"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="709"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="710"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="711"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="712"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="713"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="714"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="715"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="716"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="717"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="718"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="719"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="720"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="721"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="722"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="723"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="724"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="725"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="726"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="727"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="728"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="729"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="730"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="731"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="732"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="733"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="734"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="735"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="736"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="737"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="738"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="739"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="740"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="741"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="742"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="743"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="744"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="745"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="746"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="747"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="748"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="749"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="750"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="751"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="752"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="753"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="754"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="755"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="756"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="757"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="758"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="759"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="760"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="761"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="762"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="763"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="764"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="765"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="766"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="767"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="768"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="769"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="770"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="771"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="772"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="773"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="774"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="775"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="776"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="777"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="778"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="779"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="780"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="781"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="782"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="783"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="784"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="785"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="786"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="787"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="788"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="789"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="790"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="791"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="792"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="793"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="794"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="795"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="796"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="797"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="798"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="799"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="800"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="801"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="802"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="803"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="804"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="805"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="806"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="807"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="808"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="809"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="810"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="811"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="812"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="813"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="814"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="815"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="816"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="817"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="818"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="819"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="820"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="821"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="822"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="823"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="824"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="825"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="826"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="827"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="828"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="829"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="830"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="831"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="832"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="833"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="834"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="835"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="836"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="837"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="838"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="839"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="840"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="841"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="842"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="843"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="844"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="845"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="846"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="847"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="848"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="849"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="850"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="851"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="852"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="853"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="854"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="855"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="856"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="857"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="858"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="859"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="860"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="861"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="862"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="863"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="864"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="865"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="866"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="867"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="868"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="869"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="870"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="871"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="872"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="873"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="874"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="875"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="876"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="877"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="878"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="879"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="880"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="881"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="882"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="883"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="884"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="885"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="886"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="887"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="888"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="889"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="890"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="891"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="892"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="893"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="894"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="895"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="896"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="897"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="898"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="899"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="900"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="901"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="902"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="903"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="904"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="905"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="906"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="907"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="908"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="909"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="910"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="911"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="912"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="913"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="914"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="915"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="916"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="917"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="918"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="919"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="920"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="921"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="922"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="923"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="924"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="925"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="926"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="927"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+            <Operation Class="XmlExtensions.DefDatabaseOperationReplace">
+                <success>Always</success>
+                <objPath>TerrainDef/[renderPrecedence="928"]/renderPrecedence</objPath>
+                <value>
+                    <renderPrecedence>400</renderPrecedence>
+                </value>
+            </Operation>
+        </caseTrue>
+        <caseFalse></caseFalse>
+    </Operation>
+
+    <Operation Class="XmlExtensions.DefDatabaseLog">
+        <objPath>TerrainDef/[defName="TMaterials_Mudstone5r_Rough"]/renderPrecedence</objPath>
+    </Operation>
+
+-->
+</Patch>

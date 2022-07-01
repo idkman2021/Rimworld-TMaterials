@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- the SettingsMenuDef with two tabs defined. All other tabs are added by patches -->
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>TMaterialsStone_Settings</defName>
+        <modId>carnap2.TMaterials.Stone</modId>
+        <label>TMaterials - Stone</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Settings apply after restart.</text>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Changing the settings in an existing save will reshuffle all world map rock types.</text>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine" />
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterials_StoneRarity</key>
+                <label>Enable rock rarity</label>
+                <defaultValue>true</defaultValue>
+                <tooltip>default = true</tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Makes common stones actually more common, so not every fifth cell has desert glass or meteorite rock.</text>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine" />
+            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                <key>TMaterials_StoneRarity</key>
+                <caseTrue>
+                    <li Class="XmlExtensions.Setting.Text">
+                        <text>Choose how much more common the most common rocks will be compared to the least common rocks:</text>
+                    </li>
+                    <li Class="XmlExtensions.Setting.RadioButtons">
+                        <key>TMaterials_StoneRarityChoice</key>
+                        <defaultValue>10</defaultValue>
+                        <buttons>
+                            <li>
+                                <label>5x</label>
+                                <value>5</value>
+                            </li>
+                            <li>
+                                <label>10x</label>
+                                <value>10</value>
+                            </li>
+                            <!--
+                            <li>
+                                <label>15x (may cause renderPrecedence errors if you have an extreme amount of mods)</label>
+                                <value>15</value>
+                            </li>
+                        -->
+                            <!--
+                            <li>
+                                <label>20x (not recommended)</label>
+                                <value>20</value>
+                            </li>
+                            <li>
+                                <label>25x (not recommended)</label>
+                                <value>25</value>
+                            </li>
+                        -->
+                        </buttons>
+                    </li>
+                    <li Class="XmlExtensions.Setting.GapLine" />
+                </caseTrue>
+                <caseFalse>
+                </caseFalse>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine" />
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Toggle stones:</text>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterials_TMaterials_AncientFossil</key>
+                <label>ancient fossil</label>
+                <defaultValue>true</defaultValue>
+                <tooltip></tooltip>
+            </li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterials_TMaterials_AncientStone</key>
+                <label>ancient stone</label>
+                <defaultValue>true</defaultValue>
+                <tooltip></tooltip>
+            </li>
+
+
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+
+</Defs>

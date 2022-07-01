@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- normal -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksTuff"]/costList/TMaterials_BlocksTuff</xpath>
+        <name>EM_CobblestoneTuff</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksDesertGlass"]/costList/TMaterials_BlocksDesertGlass</xpath>
+        <name>EM_CobblestoneDesertGlass</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksSoapstone"]/costList/TMaterials_BlocksSoapstone</xpath>
+        <name>EM_CobblestoneSoapstone</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksPumice"]/costList/TMaterials_BlocksPumice</xpath>
+        <name>EM_CobblestonePumice</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksPhyllite"]/costList/TMaterials_BlocksPhyllite</xpath>
+        <name>EM_CobblestonePhyllite</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksLunarRock"]/costList/TMaterials_BlocksLunarRock</xpath>
+        <name>EM_CobblestoneLunarRock</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksMeteoriteRock"]/costList/TMaterials_BlocksMeteoriteRock</xpath>
+        <name>EM_CobblestoneMeteoriteRock</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksCoquina"]/costList/TMaterials_BlocksCoquina</xpath>
+        <name>EM_CobblestoneCoquina</name>
+    </Operation>
+    <!--
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksAncientFossil"]/costList/TMaterials_BlocksAncientFossil</xpath>
+        <name>EM_CobblestoneAncientFossil</name>
+    </Operation>
+-->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksAncientStone"]/costList/TMaterials_BlocksAncientStone</xpath>
+        <name>EM_CobblestoneAncientStone</name>
+    </Operation>
+    <!-- notC -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksDiorite"]/costList/TMaterials_BlocksDiorite</xpath>
+        <name>EM_CobblestoneDiorite</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksGneiss"]/costList/TMaterials_BlocksGneiss</xpath>
+        <name>EM_CobblestoneGneiss</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksClaystone"]/costList/TMaterials_BlocksClaystone</xpath>
+        <name>EM_CobblestoneClaystone</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksPegmatite"]/costList/TMaterials_BlocksPegmatite</xpath>
+        <name>EM_CobblestonePegmatite</name>
+    </Operation>
+    <!-- notCE -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksAndesite"]/costList/TMaterials_BlocksAndesite</xpath>
+        <name>EM_CobblestoneAndesite</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksGabbro"]/costList/TMaterials_BlocksGabbro</xpath>
+        <name>EM_CobblestoneGabbro</name>
+    </Operation>
+    <!-- notE -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksChalk"]/costList/TMaterials_BlocksChalk</xpath>
+        <name>EM_CobblestoneChalk</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksScoria"]/costList/TMaterials_BlocksScoria</xpath>
+        <name>EM_CobblestoneScoria</name>
+    </Operation>
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksDacite"]/costList/TMaterials_BlocksDacite</xpath>
+        <name>EM_CobblestoneDacite</name>
+    </Operation>
+    <!-- notA -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksMudstone"]/costList/TMaterials_BlocksMudstone</xpath>
+        <name>EM_CobblestoneMudstone</name>
+    </Operation>
+    <!-- NotACE -->
+    <Operation Class="PatchOperationSetName">
+        <success>Always</success>
+        <xpath>Defs/TerrainDef[defName="FlagstoneBlocksObsidian"]/costList/TMaterials_BlocksObsidian</xpath>
+        <name>EM_CobblestoneObsidian</name>
+    </Operation>
+
+
+</Patch>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- normal -->
+    <Operation Class="PatchOperationRemove">
+        <success>Always</success>
+        <xpath>Defs/RecipeDef[@ParentName and @MayRequire="Argon.ExpandedMaterials.Stones"] | 
+            Defs/ThingDef[@ParentName and @MayRequire="Argon.ExpandedMaterials.Stones"] | 
+        </xpath>
+    </Operation>
+
+
+</Patch>
