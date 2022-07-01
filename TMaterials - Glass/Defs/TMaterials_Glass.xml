@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <!--============================ glass ===============================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_Glass</defName>
+        <label>glass</label>
+        <description>A hard, brittle substance known for transparency. Made by fusing sand with stone and cooling rapidly.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(168, 229, 255)</color>
+            <texPath>TMaterials/common/glass/normal</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>3</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.4</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.68</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.32</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.05</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(168, 229, 255, 128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>1.6</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>1.3</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>2</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0.2</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ResearchTabDef>
+        <defName>carnap2_TMaterials</defName>
+        <label>Materials</label>
+    </ResearchTabDef>
+
+    <ResearchProjectDef>
+        <defName>TMaterials_Glass</defName>
+        <label>glass</label>
+        <description>Fuse stone with sand into glass on the smelter.</description>
+        <tab>carnap2_TMaterials</tab>
+        <baseCost>500</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Electricity</li>
+        </prerequisites>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+    <RecipeDef>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_Glass</researchPrerequisite>
+        <defName>TMaterials_GlassChunks</defName>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>smelt stone chunk into 10 glass</label>
+        <description>Fuse sand with stone and cool it rapidly to produce glass.</description>
+        <jobString>smelting glass from a stone chunk.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneChunks</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneChunks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_Glass>10</TMaterials_Glass>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_Glass</researchPrerequisite>
+        <defName>TMaterials_GlassBlocks</defName>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>smelt 75 stone blocks into 40 glass</label>
+        <description>Fuse sand with stone and cool it rapidly to produce glass.</description>
+        <jobString>smelting glass from stone blocks.</jobString>
+        <workAmount>3000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                </filter>
+                <count>75</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_Glass>40</TMaterials_Glass>
+        </products>
+    </RecipeDef>
+
+
+    <!--============================ glass ===============================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_GlassTempered</defName>
+        <label>tempered glass</label>
+        <description>Glass chemically treated with plasteel to increase its strength compared with normal glass, although it is slightly less beautiful.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(61, 99, 117)</color>
+            <texPath>TMaterials/common/glass/normal</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.5</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.98</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.49</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.64</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1.15</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.85</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.025</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(61, 99, 117, 128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>1</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>1.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>2.0</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>1.4</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0.2</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0.05</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <RecipeDef>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_Glass</researchPrerequisite>
+        <defName>TMaterials_GlassTempered</defName>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>make 10 tempered glass</label>
+        <description>Treat glass with plasteel to produce tempered glass.</description>
+        <jobString>producing tempered glass.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TMaterials_Glass</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TMaterials_Glass</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_GlassTempered>10</TMaterials_GlassTempered>
+        </products>
+    </RecipeDef>
+
+    <!--============================ glass ===============================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_GlassClear</defName>
+        <label>clear glass</label>
+        <description>Glass treated with silver. It is more transparent than regular glass, and doesn't have that bluish tint.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(128, 128, 128)</color>
+            <texPath>TMaterials/common/glass/normal</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.3</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.55</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.24</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.24</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(128, 128, 128, 128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>10</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.4</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>2.1</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>1.2</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>1.2</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ResearchProjectDef>
+        <defName>TMaterials_GlassAdvanced</defName>
+        <label>advanced glass</label>
+        <description>Treat glass with silver to make it more transparent, add iron oxide extracted from steel to make dark tinted glass, laminate it using chemfuel, or sandblast it with small amounts of stone to reduce opacity.</description>
+        <tab>carnap2_TMaterials</tab>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>TMaterials_Glass</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+    <RecipeDef>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_GlassAdvanced</researchPrerequisite>
+        <defName>TMaterials_GlassClear</defName>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>make 10 clear glass</label>
+        <description>Treat glass with silver to produce clear glass.</description>
+        <jobString>producing clear glass.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TMaterials_Glass</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Silver</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TMaterials_Glass</li>
+                <li>Silver</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_GlassClear>10</TMaterials_GlassClear>
+        </products>
+    </RecipeDef>
+
+    <!-- tintint -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_GlassTinted</defName>
+        <label>tinted glass</label>
+        <description>Dark tinted glass. It absorbs light and makes it harder to distinguish fine details in objects, but looks cool.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(22, 23, 24)</color>
+            <texPath>TMaterials/common/glass/frosted</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>5</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.3</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.7</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.34</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.4</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <stuffAdjective>tinted</stuffAdjective>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.02</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(22, 23, 24, 210)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>20</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.8</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>0.2</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>1.2</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>1.2</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <RecipeDef>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_GlassAdvanced</researchPrerequisite>
+        <defName>TMaterials_GlassTinted</defName>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>make 10 tinted glass</label>
+        <description>Add iron oxide extracted from steel to normal glass to produce dark tinted glass.</description>
+        <jobString>producing tinted glass.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TMaterials_Glass</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TMaterials_Glass</li>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_GlassTinted>10</TMaterials_GlassTinted>
+        </products>
+    </RecipeDef>
+
+    
+    <!--============================ glass ===============================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_GlassLaminated</defName>
+        <label>laminated glass</label>
+        <description>Glass laminated with chemfuel-based polymer that gives it a brighter color. Offers a more reasonable strength and very quick to produce.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(200, 200, 200)</color>
+            <texPath>TMaterials/common/glass/normal</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.35</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.68</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.32</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.26</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>0.8</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.04</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(200, 200, 200, 128)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>1</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>1</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>1.5</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>1</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>1.6</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0.2</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>TMaterials_GlassLaminated</defName>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_GlassAdvanced</researchPrerequisite> 
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>make 75 laminated glass</label>
+        <description>Laminate bulk amounts of glass with chemfuel-based polymer to increase strength.</description>
+        <jobString>producing laminated glass.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TMaterials_Glass</li>
+                    </thingDefs>
+                </filter>
+                <count>75</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>25</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TMaterials_Glass</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_GlassLaminated>75</TMaterials_GlassLaminated>
+        </products>
+    </RecipeDef>
+
+    <!--============================ glass ===============================-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>TMaterials_GlassFrosted</defName>
+        <label>frosted glass</label>
+        <description>Sandblasted glass, less transparent than normal glass.</description>
+        <graphicData>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(155, 175, 155)</color>
+            <texPath>TMaterials/common/glass/frosted</texPath>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract> <!-- Silver_Drop Metal_Drop Wood_Drop ChunkRock_Drop -->
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <statBases>
+            <MarketValue>4</MarketValue> <!-- silver 1 gold 10 steel 1.9 plasteel 9 wood 1.2 uranium 6 jade 5 stone 0.9 -->
+            <Mass>0.4</Mass> <!-- silver 0.008 gold 0.008 steel 0.5 plasteel 0.25 wood 0.4 uranium 1 jade 0.5; 1 = ~16000kg/m3 -->
+            <StuffPower_Armor_Sharp>0.6</StuffPower_Armor_Sharp> <!-- silver 0.72 gold 0.72 steel 0.9  plasteel 1.14 wood 0.54 uranium 1.08 jade 0.9 -->
+            <StuffPower_Armor_Blunt>0.25</StuffPower_Armor_Blunt> <!-- silver 0.36 gold 0.36 steel 0.45 plasteel 0.55 wood 0.54 uranium 0.54 jade 0.45 -->
+            <StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat> <!-- silver 0.36 gold 0.36 steel 0.60 plasteel 0.65 wood 0.4  uranium 0.65 jade 0.54 -->
+            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold> <!-- silver 0.3  gold 3    steel 3    plasteel 3    wood 8    uranium 3    jade 3 -->
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat> <!-- silver 0.0  gold 0    steel 0    plasteel 0    wood 4    uranium 0    jade 0 -->
+            <SharpDamageMultiplier>1</SharpDamageMultiplier> <!-- silver 0.85 gold 0.75 steel 1    plasteel 1.1  wood 0.4  uranium 1.1  jade - stone 0.6 -->
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier> <!-- silver 1.0  gold 1.0  steel 1    plasteel 0.9  wood 0.9  uranium 1.5  jade 1.5 stone 1.0 -->
+        </statBases> <!-- value1~value2 -->
+        <stuffProps>
+            <categories>
+                <li>Metallic</li> <!-- Metallic Woody Stony Fabric -->
+            </categories>
+            <constructEffect>ConstructMetal</constructEffect> <!-- ConstructMetal ConstructWood -->
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff> <!-- BulletImpact_Metal BulletImpact_Wood -->
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp> <!-- MeleeHit_Metal_Sharp MeleeHit_Wood MeleeHit_Stone -->
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt> <!-- MeleeHit_Metal_Blunt MeleeHit_Wood MeleeHit_Stone -->
+            <commonality>0.04</commonality> <!-- silver 0.05 gold 0.02 steel 1.00 plasteel 0.05 wood 1.0 uranium 0.05 jade 0.05 -->
+            <color>RGBA(155, 175, 155, 220)</color> <!-- R,G,B -->
+            <statOffsets>
+                <Beauty>12</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.6</MaxHitPoints> <!-- silver 0.7 gold 0.6 steel 1 plasteel 2.8 wiid 0.65 uranium 2.5 jade 0.5 stone 1.8 -->
+                <Beauty>1.4</Beauty> <!-- silver 2 gold 2.5 steel 1 plasteel 1 wood 1 uranium 0.5 jade 2.5 -->
+                <WorkToMake>1</WorkToMake> <!-- gold 0.9 plasteel 2.2 wood 0.7 uranium 1.9 stone 1.3 -->
+                <WorkToBuild>1.6</WorkToBuild> <!-- = worktomake, stone 6.0 -->
+                <Flammability>0</Flammability> <!-- silver 0.4 gold 0.4 steel 0.4 plasteel 0 wood 1 uranium 0 -->
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded> <!-- Light Medium Heavy -->
+        <modExtensions>
+            <li Class="VFECore.StuffExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+                <structureGenerationCommonalityFactor>2</structureGenerationCommonalityFactor>
+                <weaponGenerationCommonalityFactor>0.2</weaponGenerationCommonalityFactor>
+                <apparelGenerationCommonalityFactor>0</apparelGenerationCommonalityFactor>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <RecipeDef>
+        <defName>TMaterials_GlassFrosted</defName>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <researchPrerequisite>TMaterials_GlassAdvanced</researchPrerequisite> 
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <label>make 10 frosted glass</label>
+        <description>Sandblast glass with stone to reduce transparency.</description>
+        <jobString>sandblasting glass.</jobString>
+        <workAmount>1000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TMaterials_Glass</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>TMaterials_Glass</li>
+            </thingDefs>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+        </fixedIngredientFilter>
+        <products>
+            <TMaterials_GlassFrosted>10</TMaterials_GlassFrosted>
+        </products>
+    </RecipeDef>
+
+
+</Defs>

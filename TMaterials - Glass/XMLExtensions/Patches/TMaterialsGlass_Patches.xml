@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Glass</modId>
+        <key>TMaterialsGlass_ResearchGlass</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue></caseTrue>
+        <caseFalse>
+            <Operation Class="PatchOperationRemove">
+                <xpath>
+                    Defs/ResearchProjectDef[defName="TMG_Glass"] | 
+                    Defs/RecipeDef[defName="TMG_GlassBlocks" or defName="TMG_GlassChunks" or defName="TMG_GlassTempered"]/researchPrerequisite[text()="TMG_Glass"] | 
+                    Defs/ResearchProjectDef[defName="TMG_GlassClear"]/prerequisites/li[text()="TMG_Glass"]
+                </xpath>
+            </Operation>
+        </caseFalse>
+    </Operation>
+
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>carnap2.TMaterials.Glass</modId>
+        <key>TMaterialsGlass_ResearchClearGlass</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue></caseTrue>
+        <caseFalse>
+            <Operation Class="PatchOperationRemove">
+                <xpath>
+                    Defs/ResearchProjectDef[defName="TMG_GlassClear"] | 
+                    Defs/RecipeDef[defName="TMG_GlassClear"]/researchPrerequisite[text()="TMG_GlassClear"]
+                </xpath>
+            </Operation>
+            <Operation Class="XmlExtensions.OptionalPatch">
+                <modId>carnap2.TMaterials.Glass</modId>
+                <key>TMaterialsGlass_ResearchGlass</key>
+                <defaultValue>true</defaultValue>
+                <caseTrue></caseTrue>
+                <caseFalse>
+                    <Operation Class="PatchOperationFindMod">
+                        <mods>
+                            <li>TMaterials - Whatever</li>
+                            <li>TMaterials - Whatever 2</li>
+                        </mods>
+                        <nomatch Class="PatchOperationRemove">
+                            <xpath>Defs/ResearchTabDef[defName="carnap2_TMaterials"]</xpath>
+                        </nomatch>
+                    </Operation>
+                </caseFalse>
+            </Operation>
+        </caseFalse>
+    </Operation>
+
+
+</Patch>

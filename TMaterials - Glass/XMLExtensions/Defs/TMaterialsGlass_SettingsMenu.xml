@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <XmlExtensions.SettingsMenuDef>
+        <defName>TMaterialsGlass_Settings</defName>
+        <modId>carnap2.TMaterials.Glass</modId>
+        <label>TMaterials - Glass</label>
+        <settings>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>requires restart</text>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine" />
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterialsGlass_ResearchGlass</key>
+                <label>
+                    <![CDATA[Glass requires <b>Glass</b> research]]>
+                </label>
+                <defaultValue>true</defaultValue>
+                <tooltip>default = true</tooltip>
+            </li>
+
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <key>TMaterialsGlass_ResearchClearGlass</key>
+                <label>
+                    <![CDATA[Clear glass requires <b>Clear glass</b> research]]>
+                </label>
+                <defaultValue>true</defaultValue>
+                <tooltip>default = true</tooltip>
+            </li>
+
+
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+
+
+</Defs>
